@@ -1,0 +1,44 @@
+# Henning Halfpap — Systems Engineer × AI
+
+> Systems Engineer with 30+ years in business-critical IT infrastructure, now
+> working at the intersection of production infrastructure and agentic AI. Based
+> in Bad Vilbel, Germany. This profile answers "What have you built?" with links,
+> not claims.
+>
+> Slogan: Made with AI. Made for humans and agents alike.
+
+## About
+
+A red thread, not a straight line: naval communications officer (German Navy) →
+Java/J2EE development → Unix administration (DAB bank) → Solaris, ZFS and customer
+training for Sun Microsystems → Lead Systems Engineer at FactSet (large migrations
+CentOS 7 → AWS/Rocky 9, Redis clusters, 24/7 on-call) → a self-built "KI-OS"
+(Claude Code, MCP servers, agent skills) that automates real work.
+
+Recurring motifs: deep operational discipline, cross-layer systems thinking
+(hardware → OS → network → application → operations), and knowledge transfer.
+
+## What I built
+
+- **alarm-button-firmware** — https://github.com/McCavity/alarm-button-firmware
+  ESP32-S3 firmware for a physical status & acknowledge button.
+- **cadiz-countdown** — https://github.com/McCavity/cadiz-countdown
+  A split-flap countdown web module; live at https://cadiz.halfpap.io.
+- **claude-marketplace** — https://github.com/McCavity/claude-marketplace
+  Personal Claude Code / Codex plugin marketplace (agent skills + MCP servers).
+- **halfpap.io** — https://github.com/McCavity/halfpap.io
+  This site: static, accessible, agent-native (llms.txt + JSON-LD) — the live proof.
+
+More on the GitHub profile: https://github.com/McCavity
+
+## Services
+
+Open to roles & projects at the intersection of production infrastructure and
+AI-driven automation.
+
+## Contact
+
+- Email: hhalfpap@mac.com
+- LinkedIn: https://www.linkedin.com/in/henninghalfpap/
+- Xing: https://www.xing.com/profile/Henning_Halfpap/
+- GitHub: https://github.com/McCavity

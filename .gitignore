@@ -9,3 +9,10 @@ caddy_config/
 # deploy-time secrets / local env (should never exist, but guard anyway)
 .env
 *.local
+
+# Build-synced content: shared/{css,fonts} and shared/legal are mirrored into the
+# site roots at deploy time (platform/deploy.sh). Source of truth lives in shared/.
+sites/*/css/
+sites/*/fonts/
+sites/www/impressum/
+sites/www/datenschutz/

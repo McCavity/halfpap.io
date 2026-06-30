@@ -252,6 +252,59 @@ section {
 	color: var(--muted);
 }
 
+/* Hero with portrait: text + image side by side, stacks on narrow screens. */
+.hero-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: var(--space-2xl);
+	align-items: center;
+}
+
+@media (max-width: 48rem) {
+	.hero-card {
+		grid-template-columns: 1fr;
+		gap: var(--space-xl);
+	}
+}
+
+.portrait {
+	width: clamp(9rem, 24vw, 14rem);
+	aspect-ratio: 1;
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	object-fit: cover;
+}
+
+.slogan {
+	margin-top: var(--space-m);
+	font-family: var(--font-display);
+	font-weight: 500;
+	color: var(--accent);
+}
+
+.section-lede {
+	margin-top: var(--space-s);
+	margin-bottom: var(--space-l);
+	color: var(--muted);
+}
+
+.services-teaser {
+	padding: var(--space-m) var(--space-l);
+	border-left: 3px solid var(--accent);
+	background: var(--surface-2);
+	border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Contact links — horizontal, wrapping, dot-separated feel via gaps. */
+.contact-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-m) var(--space-l);
+	list-style: none;
+	padding: 0;
+	font-weight: 500;
+}
+
 /* ---- Buttons ------------------------------------------------------------ */
 
 .btn {
