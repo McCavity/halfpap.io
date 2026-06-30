@@ -1,0 +1,27 @@
+# halfpap.io
+
+> The personal web hub of Henning Halfpap — self-hosted, static, and
+> agent-native. A small, growing distributor of independent projects, each on its
+> own subdomain.
+>
+> Slogan: Made with AI. Made for humans and agents alike.
+
+## Modules
+
+- **Visitenkarte** — https://henning.halfpap.io
+  Who Henning is and what he has built — links, not claims.
+  Profile core: https://henning.halfpap.io/llms.txt
+- **Wetterstation** — https://wetter.halfpap.io
+  Live weather data from a self-hosted homelab.
+- **Cádiz-Countdown** — https://cadiz.halfpap.io
+  A split-flap countdown web module.
+
+## About this site
+
+Static HTML/CSS served by Caddy, no JavaScript, no cookies, no trackers,
+self-hosted fonts. The delivered HTML is the content — readable by humans and
+agents alike. TLS terminates at a Cloudflare Tunnel.
+
+## Contact
+
+See the Visitenkarte: https://henning.halfpap.io
