@@ -1,0 +1,46 @@
+# halfpap.io — Caddy platform config.
+# TLS terminated upstream by the Cloudflare Tunnel; Caddy speaks plain HTTP on :8080.
+{
+	admin off
+	auto_https off
+}
+
+(common) {
+	encode zstd gzip
+	header {
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy strict-origin-when-cross-origin
+		Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; frame-ancestors 'none'"
+		-Server
+	}
+	# Serve agent-native plaintext with the correct content type.
+	@txt path /llms.txt /robots.txt
+	header @txt Content-Type "text/plain; charset=utf-8"
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}
+
+:8080 {
+	import common
+
+	@www host www.halfpap.io
+	handle @www {
+		root * /srv/www
+		file_server
+	}
+
+	@henning host henning.halfpap.io
+	handle @henning {
+		root * /srv/henning
+		file_server
+	}
+
+	# Fallback for local testing without a Host header → hub.
+	handle {
+		root * /srv/www
+		file_server
+	}
+}

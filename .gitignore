@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+*.swp
+
+# local Caddy state (if ever run rootless locally)
+caddy_data/
+caddy_config/
+
+# deploy-time secrets / local env (should never exist, but guard anyway)
+.env
+*.local

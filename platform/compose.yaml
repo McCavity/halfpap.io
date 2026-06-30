@@ -1,0 +1,12 @@
+# halfpap.io — Caddy container. Content is mounted read-only (Platform ⊥ Application).
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: halfpap-io-caddy
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ../sites/www:/srv/www:ro
+      - ../sites/henning:/srv/henning:ro
