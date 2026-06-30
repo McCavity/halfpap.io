@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KI-Policy — Henning Halfpap</title>
+	<meta name="description" content="Wie und warum diese Seite mit KI gebaut wurde: Made with AI. Made for humans and agents alike. Hennings Haltung zu agent-nativem Web.">
+	<link rel="canonical" href="https://henning.halfpap.io/ai-policy.html">
+	<link rel="stylesheet" href="/css/tokens.css">
+	<link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+	<a class="skip-link" href="#main">Zum Inhalt springen</a>
+	<div class="aurora" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="https://www.halfpap.io/">halfpap.io</a>
+			<nav class="site-nav" aria-label="Hauptnavigation">
+				<a href="/">Visitenkarte</a>
+				<a href="https://www.halfpap.io/">Hub</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<div class="container">
+			<section class="prose flow">
+				<p class="eyebrow">KI-Haltung</p>
+				<h1>Made with AI. Made for humans and agents alike.</h1>
+
+				<p class="lede">Diese Seite ist großteils KI-generiert — und das steht hier bewusst und
+					sichtbar. Diese Policy erklärt das Wie und das Warum. Sie ist zitier- und
+					verlinkbar.</p>
+
+				<h2>Warum „Made with AI"</h2>
+				<p>Ich arbeite täglich mit Agentic AI — ein eigenes „KI-OS" aus Claude Code, MCP-Servern
+					und Agent Skills ist Teil meines Handwerks. Diese Website mit denselben Werkzeugen zu
+					bauen, ist deshalb keine Spielerei, sondern Konsequenz: Das Medium ist die Botschaft.
+					Wer wissen will, wie ich mit KI arbeite, sieht hier ein laufendes Beispiel statt einer
+					Behauptung.</p>
+
+				<h2>Warum „for humans and agents alike"</h2>
+				<p>Die zentrale Web-Herausforderung dieser Jahre ist, eine Seite zugleich schön für
+					Menschen <em>und</em> sauber für Agenten zu machen. Beides überlappt stärker, als man
+					denkt: Semantisches HTML, klare Struktur und Textäquivalente helfen Screenreadern und
+					KI-Agenten gleichermaßen. Barrierefreiheit und Agentenlesbarkeit sind hier zwei Seiten
+					derselben Disziplin.</p>
+
+				<h2>Wie das konkret umgesetzt ist</h2>
+				<ul>
+					<li><strong>Statisches HTML/CSS</strong> ohne Build-Pipeline — das ausgelieferte HTML
+						<em>ist</em> der Inhalt, ohne Client-seitiges Nachladen.</li>
+					<li><strong>Agent-native Dateien:</strong> eine kuratierte <a href="/llms.txt">llms.txt</a>
+						je Origin sowie eingebettetes <code>schema.org</code>-JSON-LD
+						(<code>Person</code>, <code>WebSite</code>).</li>
+					<li><strong>Semantische Landmarks</strong> (<code>header</code>, <code>nav</code>,
+						<code>main</code>, <code>footer</code>), korrekte Überschriften-Hierarchie,
+						konsequente ALT-Texte, sichtbare Fokus-Stile, volle Tastatur-Bedienbarkeit.</li>
+					<li><strong>Drei Themes</strong> (Light, Dark, High-Contrast) über
+						<code>prefers-color-scheme</code> und <code>prefers-contrast</code> — ganz ohne
+						JavaScript.</li>
+					<li><strong>Datensparsam:</strong> keine Cookies, keine Tracker, selbst gehostete
+						Fonts.</li>
+				</ul>
+
+				<h2>Mein Anspruch: KI als Werkzeug, nicht als Ausrede</h2>
+				<p>KI hat hier den Großteil des Codes geschrieben — die Richtung, die Entscheidungen und
+					die Verantwortung für das Ergebnis liegen bei mir. Inhalte sind geprüft, Fakten über
+					meinen Werdegang stammen aus erster Hand. „Made with AI" heißt nicht „ungeprüft",
+					sondern: effizient gebaut, bewusst kuratiert, transparent ausgewiesen.</p>
+
+				<p><a href="/">&larr; Zurück zur Visitenkarte</a></p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; 2026 Henning Halfpap &middot; Made with AI. Made for humans and agents alike.</p>
+			<ul class="footer-links">
+				<li><a href="/ai-policy.html">KI-Policy</a></li>
+				<li><a href="https://www.halfpap.io/impressum/">Impressum</a></li>
+				<li><a href="https://www.halfpap.io/datenschutz/">Datenschutz</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

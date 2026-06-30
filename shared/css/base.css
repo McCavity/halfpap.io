@@ -429,6 +429,34 @@ a.card:hover {
 	text-decoration: underline;
 }
 
+/* ---- Prose (legal / policy long-form text) ------------------------------ */
+
+.prose {
+	max-width: var(--measure);
+}
+
+.prose h2 {
+	margin-top: var(--space-xl);
+}
+
+.prose h3 {
+	margin-top: var(--space-l);
+	margin-bottom: var(--space-2xs);
+}
+
+.prose ul {
+	padding-left: 1.25rem;
+}
+
+.prose li + li {
+	margin-top: var(--space-2xs);
+}
+
+.prose address {
+	font-style: normal;
+	color: var(--text);
+}
+
 /* ---- Utilities ---------------------------------------------------------- */
 
 .visually-hidden {
