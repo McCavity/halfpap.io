@@ -10,6 +10,9 @@ caddy_config/
 .env
 *.local
 
+# deploy target (holds the internal Docker-host hostname) — never commit
+platform/deploy.env
+
 # Build-synced content: shared/{css,fonts} and shared/legal are mirrored into the
 # site roots at deploy time (platform/deploy.sh). Source of truth lives in shared/.
 sites/*/css/
