@@ -388,6 +388,8 @@ a.card:hover {
 .card p {
 	color: var(--muted);
 	font-size: var(--step--1);
+	/* Guard: long tokens (e.g. hyphenated product names) must wrap, not spill. */
+	overflow-wrap: break-word;
 }
 
 .hairline {
