@@ -14,7 +14,7 @@ terminated by Cloudflare; the tunnel forwards plain HTTP to Caddy on port `8080`
 Browser ──HTTPS──▶ Cloudflare edge ──▶ <nas-tunnel> (cloudflared on the NAS)
                                           │  Public Hostname routes
                                           ▼
-                                   http://<docker-host>:8080
+                                   http://<docker-host>:8082
                                           │  Host-header routing (Caddyfile)
                             ┌─────────────┴─────────────┐
                             ▼                           ▼
@@ -28,17 +28,17 @@ Public Hostname routes change — no new tunnel, no new `cloudflared`.
 
 | Public hostname        | Service                          |
 |------------------------|----------------------------------|
-| `www.halfpap.io`       | `http://<docker-host>:8080`      |
-| `henning.halfpap.io`   | `http://<docker-host>:8080`      |
+| `www.halfpap.io`       | `http://<docker-host>:8082`      |
+| `henning.halfpap.io`   | `http://<docker-host>:8082`      |
 
 Caddy distinguishes the two by the `Host` header (see `platform/Caddyfile`), so
-both routes point at the same origin `:8080`.
+both routes point at the same origin `:8082`.
 
 ## Ghost cutover
 
 1. Add the two Public Hostname routes above.
 2. **Repoint** the existing `www.halfpap.io` route (currently → Ghost) to
-   `http://<docker-host>:8080`.
+   `http://<docker-host>:8082`.
 3. Leave the **Ghost container running internally** — it is harmless once no
    tunnel route points at it. No data is migrated in Iteration 1.
 

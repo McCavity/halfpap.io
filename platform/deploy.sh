@@ -45,4 +45,4 @@ echo "→ [3/3] (re)starting Caddy on ${DEPLOY_HOST}"
 ssh "$SSH_TARGET" "cd '${DEPLOY_PATH}/platform' && docker compose up -d"
 
 echo "✓ deployed to ${DEPLOY_HOST}:${DEPLOY_PATH}"
-echo "  verify locally on the host:  curl -sI -H 'Host: www.halfpap.io' http://localhost:8080/"
+echo "  verify locally on the host:  curl -sI -H 'Host: www.halfpap.io' http://localhost:8082/"

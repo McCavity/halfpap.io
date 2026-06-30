@@ -4,8 +4,10 @@ services:
     image: caddy:2-alpine
     container_name: halfpap-io-caddy
     restart: unless-stopped
+    # Host port 8082 → container 8080. Port 8080 on the deploy host is held by the
+    # existing Ghost container (kept running during cutover); Caddy gets its own.
     ports:
-      - "8080:8080"
+      - "8082:8080"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ../sites/www:/srv/www:ro
