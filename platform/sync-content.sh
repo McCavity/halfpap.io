@@ -16,6 +16,7 @@ for site in www henning; do
 	mkdir -p "sites/$site/css" "sites/$site/fonts"
 	cp shared/css/*.css "sites/$site/css/"
 	cp shared/fonts/*.woff2 "sites/$site/fonts/"
+	cp shared/favicon.svg "sites/$site/favicon.svg"
 done
 
 echo "→ mirroring canonical legal pages under www/"
