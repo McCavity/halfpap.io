@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- NUR PREVIEW: alle 5 Ebenen flach gestapelt, mit angenäherter Squircle-Maske.
+       Nicht für Icon Composer verwenden — dort die Einzel-Ebenen 01–05 importieren. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="46%" r="72%">
+      <stop offset="0%" stop-color="#2B3B8F"/>
+      <stop offset="55%" stop-color="#232E76"/>
+      <stop offset="100%" stop-color="#1A2153"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3EE08F" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#3EE08F" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#3EE08F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wf" gradientUnits="userSpaceOnUse" x1="150" y1="0" x2="874" y2="0">
+      <stop offset="0%" stop-color="#F4F5F7"/>
+      <stop offset="42%" stop-color="#F4F5F7"/>
+      <stop offset="58%" stop-color="#7EE8B4"/>
+      <stop offset="100%" stop-color="#3EE08F"/>
+    </linearGradient>
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="1024" height="1024" rx="232" ry="232"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <!-- 01 Hintergrund -->
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <!-- 02 Glow -->
+    <circle cx="512" cy="502" r="230" fill="url(#glow)"/>
+    <!-- 03 Backtimer-Bogen -->
+    <g fill="none" stroke-width="58" stroke-linecap="butt">
+      <path d="M 512 202 A 300 300 0 0 1 652.85 766.88" stroke="#3EE08F"/>
+      <path d="M 371.15 766.88 A 300 300 0 0 1 512 202" stroke="#F4F5F7"/>
+    </g>
+    <circle cx="652.85" cy="766.88" r="29" fill="#3EE08F"/>
+    <circle cx="371.15" cy="766.88" r="29" fill="#F4F5F7"/>
+    <!-- 04 Play-Dreieck -->
+    <path d="M 438 406 L 612 502 L 438 598 Z"
+          fill="#F4F5F7" stroke="#F4F5F7" stroke-width="44" stroke-linejoin="round"/>
+    <!-- 05 Waveform -->
+    <path d="M 150 808 H 472 l 16 -10 l 16 14 l 12 -52 l 18 84 l 14 -50 l 12 18 l 16 -8 l 14 4 H 874"
+          fill="none" stroke="url(#wf)" stroke-width="9"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

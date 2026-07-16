@@ -31,6 +31,13 @@ Recurring motifs: deep operational discipline, cross-layer systems thinking
 
 More on the GitHub profile: https://github.com/McCavity
 
+## In the workshop (not public yet)
+
+- **macList** — https://maclist.halfpap.io
+  Radio playout & live assist, native on the Mac — an homage to mAirList, openly
+  vibecoded with Claude Code. Private repo, honest early stage; the page shows
+  screenshots as proof of existence.
+
 ## Services
 
 Open to roles & projects at the intersection of production infrastructure and

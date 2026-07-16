@@ -12,10 +12,15 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 echo "→ syncing shared/css + shared/fonts into site roots"
-for site in www henning; do
+for site in www henning maclist; do
 	mkdir -p "sites/$site/css" "sites/$site/fonts"
 	cp shared/css/*.css "sites/$site/css/"
 	cp shared/fonts/*.woff2 "sites/$site/fonts/"
+done
+
+# Shared favicon only where no site-specific one is committed — maclist brings
+# its own (app icon) and must not be overwritten.
+for site in www henning; do
 	cp shared/favicon.svg "sites/$site/favicon.svg"
 done
 

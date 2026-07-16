@@ -35,6 +35,15 @@
 	@henning host henning.halfpap.io
 	handle @henning {
 		root * /srv/henning
+		# Arbeitsproben-Pfad → kanonische Produktseite (301).
+		@maclistRedir path /projekte/maclist /projekte/maclist/
+		redir @maclistRedir https://maclist.halfpap.io/ permanent
+		file_server
+	}
+
+	@maclist host maclist.halfpap.io
+	handle @maclist {
+		root * /srv/maclist
 		file_server
 	}
 

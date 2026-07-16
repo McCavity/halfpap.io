@@ -1,0 +1,48 @@
+# macList — Radio playout & live assist, native on the Mac
+
+> A radio playout / live-assist app for hobby radio makers on macOS, built as an
+> homage to mAirList (the Windows original). Private hobby project in active
+> development — honest early stage, no download offered yet. Openly vibecoded
+> with Claude Code by Henning Halfpap (https://henning.halfpap.io/).
+
+## What it is
+
+A tool to drive your own radio show rather than just play it back. No server,
+no subscription, no cloud: start it and run your hour.
+
+Features today (Iteration 10):
+
+- Two players side by side (live assist): one runs, you load and fire the next.
+- Playlists as `.m3u` — the open format, nothing proprietary.
+- Sectioned, sortable playlist; drag tracks in straight from Finder.
+- Backtimer — countdown to the target time so handovers land on the second.
+- Widget bar with studio clock.
+- Played tracks stay visible (dimmed) — that is show history, not garbage.
+- Bilingual: German and English.
+
+## What it is NOT
+
+- Not a commercial product: no App Store, no price, no support contract.
+- Not a mAirList replacement or clone — pro consoles, multi-station, royalty
+  reporting and regionalization are deliberately out of scope.
+- Not finished: real playout depth (cue points, auto-cue, PFL, automation) is
+  ahead, not behind. If you need something dependable for your station, use
+  mAirList (https://www.mairlist.com/).
+
+## Why it exists
+
+mAirList was the last remaining reason to boot Windows. macList moves that last
+tool to the Mac — a bow to the original, not an attack. Formula:
+mAirList provides the blueprint. The Mac the hardware. Claude Code the skill.
+
+## Tech
+
+Swift 6.3 · SwiftUI · AVAudioEngine/CoreAudio · macOS 14+ · core managers
+(`PlaylistManager`, `PlayerController`, `OutputRouter`, `SettingsStore`) all
+`@Observable`/`@MainActor`. The repository is private; this page is the proof
+of existence. Roadmap: https://maclist.halfpap.io/assets/roadmap.svg
+
+## Contact
+
+- Author: Henning Halfpap — https://henning.halfpap.io/
+- Email: henning@halfpap.io
