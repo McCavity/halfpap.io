@@ -30,6 +30,7 @@ Public Hostname routes change — no new tunnel, no new `cloudflared`.
 |------------------------|----------------------------------|
 | `www.halfpap.io`       | `http://<docker-host>:8082`      |
 | `henning.halfpap.io`   | `http://<docker-host>:8082`      |
+| `maclist.halfpap.io`   | `http://<docker-host>:8082`      |
 
 Caddy distinguishes the two by the `Host` header (see `platform/Caddyfile`), so
 both routes point at the same origin `:8082`.
@@ -47,7 +48,8 @@ both routes point at the same origin `:8082`.
 ```bash
 for u in https://www.halfpap.io/ https://henning.halfpap.io/ \
          https://www.halfpap.io/impressum/ https://www.halfpap.io/datenschutz/ \
-         https://henning.halfpap.io/llms.txt; do
+         https://henning.halfpap.io/llms.txt \
+         https://maclist.halfpap.io/ https://maclist.halfpap.io/llms.txt; do
   echo "$u -> $(curl -s -o /dev/null -w '%{http_code}' "$u")"
 done
 ```

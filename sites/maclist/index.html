@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>macList — Radio-Playout &amp; Live-Assist, nativ auf dem Mac</title>
+	<meta name="description" content="macList — Radio-Playout und Live-Assist, nativ auf dem Mac. Eine Hommage an mAirList, gebaut fürs Hobby-Radiomachen: zwei Player, .m3u-Playlisten, Backtimer, Studiouhr. Privates Projekt, ehrlich früher Stand — vibecoded mit Claude Code.">
+	<link rel="canonical" href="https://maclist.halfpap.io/">
+	<link rel="stylesheet" href="/css/tokens.css">
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": "macList",
+		"url": "https://maclist.halfpap.io/",
+		"description": "Radio-Playout- und Live-Assist-App fürs Hobby-Radiomachen, nativ auf dem Mac. Zwei Player (Live Assist), .m3u-Playlisten, Backtimer, Studiouhr. Privates Hobbyprojekt in aktiver Entwicklung, kein kommerzielles Produkt, derzeit kein Download.",
+		"applicationCategory": "MultimediaApplication",
+		"operatingSystem": "macOS 14+",
+		"inLanguage": ["de", "en"],
+		"image": "https://maclist.halfpap.io/assets/icon-1024.png",
+		"screenshot": "https://maclist.halfpap.io/assets/screenshot-live-assist.png",
+		"creator": {
+			"@type": "Person",
+			"name": "Henning Halfpap",
+			"url": "https://henning.halfpap.io/"
+		}
+	}
+	</script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Zum Inhalt springen</a>
+	<div class="aurora" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="https://www.halfpap.io/">halfpap.io</a>
+			<nav class="site-nav" aria-label="Hauptnavigation">
+				<a href="#warum">Warum</a>
+				<a href="#roadmap">Roadmap</a>
+				<a href="https://henning.halfpap.io/">Showroom</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<div class="container">
+
+			<!-- 1 · Hero -->
+			<section class="hero hero-card">
+				<div class="hero-text">
+					<p class="eyebrow">Aus der Werkstatt &middot; privates Hobbyprojekt</p>
+					<h1>macList</h1>
+					<p class="lede">Radio&#8209;Playout &amp; Live&#8209;Assist — nativ auf dem
+						Mac. Eine Hommage an mAirList, gebaut, um die eigene Sendung selbst zu
+						fahren statt sie nur abzuspielen.</p>
+					<p class="slogan">Stand: Iteration 10 &middot; in aktiver Entwicklung</p>
+					<div class="btn-group">
+						<a class="btn btn-primary" href="#warum">Warum es das gibt&nbsp;&rarr;</a>
+						<a class="btn btn-ghost" href="https://henning.halfpap.io/">Wer dahintersteckt</a>
+					</div>
+				</div>
+				<img class="app-icon" src="/assets/icon-1024.png" width="1024" height="1024"
+					alt="macList-App-Icon: tiefblaues, abgerundetes Quadrat im Liquid-Glass-Look mit weißem Play-Dreieck, einem Backtimer-Bogen von Weiß nach Grün und einer Waveform-Grundlinie.">
+			</section>
+
+			<!-- 2 · Was ist macList -->
+			<section id="was" class="flow">
+				<p class="eyebrow">Was es ist</p>
+				<h2>Die Sendung selbst fahren</h2>
+				<p>Ein Werkzeug für Hobby&#8209;Radiomacher auf dem Mac — für alle, die aus Spaß
+					Radio machen (Webradio, Vereinsfunk, das eigene kleine Programm). Kein Server,
+					kein Abo, keine Cloud im Hintergrund: man startet es und fährt seine Stunde.</p>
+				<ul>
+					<li><strong>Zwei Player nebeneinander (Live Assist)</strong> — der eine läuft,
+						den nächsten Titel legst du auf und startest ihn, wenn es paßt.</li>
+					<li><strong>Playlisten als <code>.m3u</code></strong> — das offene Format,
+						nichts Proprietäres, in das man seine Sendung einsperrt.</li>
+					<li><strong>Sortierte Playlist mit Abschnitten</strong> — Drag&#8209;and&#8209;drop
+						zum Umstellen, Titel direkt aus dem Finder hineinziehen.</li>
+					<li><strong>Backtimer</strong> — die Rückwärtsuhr auf die Zielzeit (Nachrichten,
+						nächste Sendung, volle Stunde), damit die Übergabe sitzt.</li>
+					<li><strong>Widget&#8209;Leiste</strong> mit Studiouhr und den Anzeigen, die man
+						im Blick haben will.</li>
+					<li>Gespielte Titel bleiben sichtbar (abgedunkelt) — das ist Sendehistorie,
+						nicht Müll.</li>
+					<li><strong>Zweisprachig</strong>, deutsch und englisch.</li>
+				</ul>
+				<figure class="card">
+					<img src="/assets/screenshot-live-assist.png" width="1800" height="2024"
+						alt="Screenshot der laufenden macList-App im Live-Assist-Betrieb: Deck A spielt mit Fortschrittsbalken, Deck B geladen und bereit, darüber die Playlist mit abgedunkelter Sendehistorie, oben Backtimer mit Zielzeit 11:00 Uhr und Studiouhr.">
+					<figcaption>Live&#8209;Assist im Sendebetrieb: Deck&nbsp;A spielt, Deck&nbsp;B
+						steht bereit, der Backtimer zählt auf die Zielzeit (Iteration&nbsp;10).</figcaption>
+				</figure>
+			</section>
+
+			<!-- 3 · Was es nicht ist -->
+			<section id="nicht" class="flow">
+				<p class="eyebrow">Lieber ehrlich als großspurig</p>
+				<h2>Was macList nicht ist</h2>
+				<ul>
+					<li><strong>Kein kommerzielles Produkt.</strong> Kein App Store, kein Preis,
+						kein Support&#8209;Vertrag. Ein privates Projekt, das ich offen zeige.</li>
+					<li><strong>Kein mAirList&#8209;Ersatz und kein „besser als".</strong>
+						Professionelle Digitalpulte, Multi&#8209;Station, GEMA&#8209;/Lizenzmeldung,
+						Regionalisierung — das ist Senderketten&#8209;Terrain und bewußt nicht mein
+						Ziel. macList will kein Klon sein.</li>
+					<li><strong>Noch nicht „fertig".</strong> Der Stand ist ehrlich früh. Die
+						richtig runde Playout&#8209;Tiefe (saubere Cue&#8209;Punkte, Auto&#8209;Cue,
+						Vorhören, Automatik&#8209;Modus) liegt noch vor mir, nicht hinter mir.</li>
+				</ul>
+				<p>Wer für seinen Sender etwas Betriebssicheres braucht: nimm
+					<a href="https://www.mairlist.com/" rel="noopener">mAirList</a>. macList ist
+					für die, die auf dem Mac basteln wollen und Freude am Werkzeug selbst haben.</p>
+			</section>
+
+			<!-- 4 · Warum es das gibt -->
+			<section id="warum" class="flow">
+				<p class="eyebrow">Warum es das gibt</p>
+				<h2>Das letzte Windows&#8209;Werkzeug</h2>
+				<p>Ich mache seit Jahren aus Spaß Radio, und dafür gab es genau einen Grund,
+					überhaupt noch Windows zu starten: <strong>mAirList</strong> — das letzte
+					Werkzeug, für das ich das Betriebssystem wechseln mußte. macList ist der
+					Versuch, genau das aufzulösen: das letzte Windows&#8209;nur&#8209;Werkzeug auf
+					den Mac zu holen. Als Verbeugung vor der Vorlage, nicht als Angriff.</p>
+				<p>Und ich stehe offen dazu, wie es entstanden ist:
+					<strong>vibecoded mit Claude Code.</strong> Ich bin Systemingenieur, kein
+					Swift&#8209;Entwickler von Haus aus — die App ist im Dialog mit einem
+					KI&#8209;Coding&#8209;Werkzeug gewachsen, Iteration für Iteration. Kein Makel,
+					den man verschweigt, sondern schlicht die Wahrheit, wie 2026 solche Projekte
+					möglich werden.</p>
+				<p class="slogan">mAirList liefert die Vorlage. Der Mac die Hardware.
+					Claude&nbsp;Code den Skill.</p>
+			</section>
+
+			<!-- 5 · Roadmap -->
+			<section id="roadmap" class="flow">
+				<p class="eyebrow">Wo es gerade steht</p>
+				<h2>You are here</h2>
+				<p>Die Grundlage steht (zwei Decks, Playlist, Backtimer, Widgets), und die inneren
+					Werte sind geschraubt: Robustheit beim Laden, sauberes Audio&#8209;Verhalten,
+					Diagnose im Betrieb. Als nächstes folgt die Playout&#8209;Tiefe (Cue&#8209;Punkte,
+					Automatik, Vorhören) — der Punkt, an dem macList von „läuft schon" zu „kann man
+					ernsthaft fahren" wird. Alles Weitere ist ehrlich als Fernziel markiert:
+					keine Termine, keine Versprechen.</p>
+				<figure class="card">
+					<img src="/assets/roadmap.svg" width="1160" height="660"
+						alt="macList-Roadmap: Etappe 0 Fundament erledigt, You-are-here-Marker nach Iteration 10, davor liegend Etappe 1 Playout-Tiefe, dann Jingles, Signalkette, Hardware und ferner Horizont mit Planning-App, Backend und Processing-Multibus.">
+					<figcaption>Die Roadmap folgt dem Systemton dieser Seite — hell wie dunkel.</figcaption>
+				</figure>
+			</section>
+
+			<!-- 6 · Technik -->
+			<section id="technik" class="flow">
+				<p class="eyebrow">Unter der Haube</p>
+				<h2>Technik</h2>
+				<ul>
+					<li><strong>Sprache:</strong> Swift&nbsp;6.3</li>
+					<li><strong>UI:</strong> SwiftUI</li>
+					<li><strong>Audio:</strong> AVAudioEngine / CoreAudio</li>
+					<li><strong>Minimum:</strong> macOS&nbsp;14 (Sonoma), Entwicklung auf
+						macOS&nbsp;26 (arm64)</li>
+					<li><strong>Kern:</strong> <code>PlaylistManager</code> &middot;
+						<code>PlayerController</code> &middot; <code>OutputRouter</code> &middot;
+						<code>SettingsStore</code> — alle <code>@Observable</code>,
+						<code>@MainActor</code></li>
+				</ul>
+				<p>Das Repository ist privat — dieser Einblick hier ist der Existenznachweis.
+					Fragen dazu beantworte ich gern:
+					<a href="https://henning.halfpap.io/#kontakt">Kontakt</a>.</p>
+			</section>
+
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; 2026 Henning Halfpap &middot; Made with AI. Made for humans and agents alike.</p>
+			<ul class="footer-links">
+				<li><a href="https://henning.halfpap.io/ai-policy.html">KI-Policy</a></li>
+				<li><a href="https://www.halfpap.io/impressum/">Impressum</a></li>
+				<li><a href="https://www.halfpap.io/datenschutz/">Datenschutz</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

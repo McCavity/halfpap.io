@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 660" role="img" aria-labelledby="ttl desc" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<title id="ttl">macList Roadmap</title>
+<desc id="desc">Themen-Roadmap von macList: Etappe 0 Fundament (erledigt), You-are-here nach Iteration 10 (erledigt), vor Etappe 1 Playout-Tiefe, 2 Jingles, 3 Signalkette, 4 Hardware, danach ferner Horizont mit Planning-App, Backend und Processing-Multibus.</desc>
+<style>
+:root{--bg:#f7f9fc;--surface:#ffffff;--surface2:#eef2f8;--text:#11151c;--muted:#525a68;--accent:#1f5fd0;--accent2:#1a4fb0;--onacc:#ffffff;--border:rgba(15,23,42,.14);}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0c10;--surface:#12151c;--surface2:#181c25;--text:#e7eaf0;--muted:#9aa3b2;--accent:#6aa0ff;--accent2:#8ab4ff;--onacc:#06080d;--border:rgba(255,255,255,.12);}}
+.d{font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;}
+.tt{fill:var(--text);}
+.mu{fill:var(--muted);}
+.ac{fill:var(--accent2);}
+</style>
+<rect x="0" y="0" width="1160" height="660" fill="var(--bg)"/>
+<text x="40" y="52" class="d tt" font-size="30" font-weight="700">macList <tspan class="ac">— Roadmap</tspan></text>
+<text x="40" y="80" class="mu" font-size="15">Vom soliden Handwerk zum Radio-Ökosystem  ·  Hobby-Mac, kein mAirList-Klon</text>
+
+<line x1="95" y1="350" x2="915" y2="350" stroke="var(--border)" stroke-width="3"/>
+<line x1="915" y1="350" x2="985" y2="350" stroke="var(--accent)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+<rect x="983" y="322" width="150" height="118" rx="14" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+<circle cx="170" cy="350" r="15" fill="var(--accent)"/>
+<path d="M162 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="170" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">0 · Fundament</text>
+<text x="170" y="392" text-anchor="middle" class="mu" font-size="13">2-Deck-Playout</text>
+<text x="170" y="411" text-anchor="middle" class="mu" font-size="13">Live-Assist · .m3u</text>
+<text x="170" y="430" text-anchor="middle" class="mu" font-size="13">Backtimer · Widgets</text>
+<text x="170" y="456" text-anchor="middle" class="ac" font-size="12" font-weight="500">erledigt</text>
+
+<circle cx="360" cy="350" r="15" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+<circle cx="377" cy="333" r="10" fill="var(--accent)"/>
+<text x="377" y="337" text-anchor="middle" fill="var(--onacc)" font-size="11" font-weight="500">2</text>
+<text x="360" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">1 · Playout-Tiefe</text>
+<text x="360" y="392" text-anchor="middle" class="mu" font-size="13">Cue-Punkte + Auto-Cue</text>
+<text x="360" y="411" text-anchor="middle" class="mu" font-size="13">Automation-Modus</text>
+<text x="360" y="430" text-anchor="middle" class="mu" font-size="13">PFL / Prelisten</text>
+<text x="360" y="456" text-anchor="middle" class="ac" font-size="12" font-weight="500">hier wird's richtig benutzbar</text>
+
+<circle cx="545" cy="350" r="15" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+<text x="545" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">2 · Jingles</text>
+<text x="545" y="392" text-anchor="middle" class="mu" font-size="13">Cartwall (SFX-Grid)</text>
+<text x="545" y="411" text-anchor="middle" class="mu" font-size="13">Voice Tracking</text>
+
+<circle cx="730" cy="350" r="15" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+<circle cx="745" cy="333" r="10" fill="var(--accent)"/>
+<text x="745" y="337" text-anchor="middle" fill="var(--onacc)" font-size="11" font-weight="500">1</text>
+<circle cx="769" cy="333" r="10" fill="var(--accent)"/>
+<text x="769" y="337" text-anchor="middle" fill="var(--onacc)" font-size="11" font-weight="500">3</text>
+<text x="730" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">3 · Signalkette</text>
+<text x="730" y="392" text-anchor="middle" class="mu" font-size="13">PGM-Bus-Abgriff</text>
+<text x="730" y="411" text-anchor="middle" class="mu" font-size="13">Now-Playing-Output</text>
+<text x="730" y="430" text-anchor="middle" class="mu" font-size="13">Single-Stream-Encoder</text>
+
+<circle cx="915" cy="350" r="15" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+<text x="915" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">4 · Hardware</text>
+<text x="915" y="392" text-anchor="middle" class="mu" font-size="13">GPIO · MIDI · Fader</text>
+<text x="915" y="411" text-anchor="middle" class="mu" font-size="13">RODECaster</text>
+<text x="915" y="430" text-anchor="middle" class="mu" font-size="13">MIC / ARI / TEL</text>
+
+<text x="1058" y="306" text-anchor="middle" class="d mu" font-size="15" font-weight="500">Ferner Horizont</text>
+<text x="1058" y="348" text-anchor="middle" class="mu" font-size="12">Planning-App</text>
+<text x="1058" y="367" text-anchor="middle" class="mu" font-size="12">Backend (DB+Media)</text>
+<text x="1058" y="386" text-anchor="middle" class="ac" font-size="12" font-weight="500">★ Processing-Multibus</text>
+<text x="1058" y="405" text-anchor="middle" class="mu" font-size="12">(AI-Presenter)</text>
+
+<rect x="205" y="222" width="120" height="46" rx="10" fill="var(--surface)" stroke="var(--accent2)" stroke-width="1.5"/>
+<text x="265" y="243" text-anchor="middle" class="d ac" font-size="14" font-weight="500">≈ You are here</text>
+<text x="265" y="260" text-anchor="middle" class="mu" font-size="11">Iter 10 ✓ · Etappe 1 als nächstes</text>
+<line x1="265" y1="268" x2="265" y2="338" stroke="var(--accent2)" stroke-width="1.5" stroke-dasharray="3 4"/>
+<circle cx="265" cy="350" r="6" fill="var(--accent2)"/>
+
+<line x1="40" y1="560" x2="1120" y2="560" stroke="var(--border)" stroke-width="1"/>
+<text x="40" y="592" class="tt" font-size="13" font-weight="500">Früh eingezogene Nahtstellen</text>
+<text x="40" y="612" class="mu" font-size="12.5">N1 Remote-Control-API  ·  N2 erweitertes .m3u (Cue-Punkte + Show-Metadaten)  ·  N3 PGM-Bus-Abgriff — billig jetzt, teuer später</text>
+<text x="40" y="638" class="mu" font-size="12.5">Bewusst draußen (kein Klon):  Pro-Digitalpulte · SQL-Multi-Station · Royalty-Reporting · Regionalisierung · Multi-Instance</text>
+</svg>

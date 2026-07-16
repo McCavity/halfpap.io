@@ -275,6 +275,13 @@ section {
 	object-fit: cover;
 }
 
+/* App-Icon-Render: Squircle-Form, Rand und Schatten stecken im Artwork
+   (macOS-Icon-Grid) — kein Rahmen, dafür etwas größer als .portrait. */
+.app-icon {
+	width: clamp(10rem, 27vw, 16rem);
+	aspect-ratio: 1;
+}
+
 .slogan {
 	margin-top: var(--space-m);
 	font-family: var(--font-display);
