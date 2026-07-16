@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 600" role="img" aria-labelledby="ttl desc" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<title id="ttl">KI-Betriebssystem - das Grundkonzept</title>
+<desc id="desc">Vier gestapelte Ebenen - Wissen, Koordination, Lernen, Wartung - bilden das KI-Betriebssystem zwischen Mensch und KI-Modell. Eine Integrationsschicht verbindet die Ebenen über MCP und offene Standards mit der realen Umgebung: Dokumentenarchiv, Smart Home, Monitoring und Alarme, Netzwerk und Server.</desc>
+<style>
+:root{--bg:#f7f9fc;--surface:#ffffff;--surface2:#eef2f8;--text:#11151c;--muted:#525a68;--accent:#1f5fd0;--accent2:#1a4fb0;--onacc:#ffffff;--border:rgba(15,23,42,.14);}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0c10;--surface:#12151c;--surface2:#181c25;--text:#e7eaf0;--muted:#9aa3b2;--accent:#6aa0ff;--accent2:#8ab4ff;--onacc:#06080d;--border:rgba(255,255,255,.12);}}
+.d{font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;}
+.tt{fill:var(--text);}
+.mu{fill:var(--muted);}
+.ac{fill:var(--accent2);}
+</style>
+<rect x="0" y="0" width="1160" height="600" fill="var(--bg)"/>
+<text x="40" y="52" class="d tt" font-size="30" font-weight="700">Das Grundkonzept <tspan class="ac">- vier Ebenen + Integration</tspan></text>
+<text x="40" y="80" class="mu" font-size="15">was zwischen Mensch und Modell steht, macht aus der KI einen Arbeitspartner  ·  übertragbar auf (fast) jeden Alltag</text>
+
+<rect x="270" y="104" width="180" height="40" rx="20" fill="var(--surface2)" stroke="var(--border)"/>
+<text x="360" y="129" text-anchor="middle" class="d tt" font-size="16" font-weight="500">Mensch</text>
+<line x1="360" y1="144" x2="360" y2="158" stroke="var(--border)" stroke-width="3"/>
+
+<rect x="64" y="158" width="592" height="348" rx="14" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="88" y="186" class="d ac" font-size="13" font-weight="500">KI-Betriebssystem</text>
+
+<rect x="88" y="196" width="544" height="64" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<circle cx="116" cy="228" r="12" fill="var(--accent)"/>
+<text x="116" y="232" text-anchor="middle" fill="var(--onacc)" font-size="12" font-weight="500">4</text>
+<text x="140" y="223" class="d tt" font-size="17" font-weight="500">Wartung</text>
+<text x="140" y="245" class="mu" font-size="13">Entschlackung auf Kadenz · Meßgrößen · Archiv</text>
+
+<rect x="88" y="272" width="544" height="64" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<circle cx="116" cy="304" r="12" fill="var(--accent)"/>
+<text x="116" y="308" text-anchor="middle" fill="var(--onacc)" font-size="12" font-weight="500">3</text>
+<text x="140" y="299" class="d tt" font-size="17" font-weight="500">Lernen</text>
+<text x="140" y="321" class="mu" font-size="13">Lernprotokoll · Langzeit-Gedächtnis · Regeln</text>
+
+<rect x="88" y="348" width="544" height="64" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<circle cx="116" cy="380" r="12" fill="var(--accent)"/>
+<text x="116" y="384" text-anchor="middle" fill="var(--onacc)" font-size="12" font-weight="500">2</text>
+<text x="140" y="375" class="d tt" font-size="17" font-weight="500">Koordination</text>
+<text x="140" y="397" class="mu" font-size="13">Kommandos: Lagebild · Planung · Review · Abschluß</text>
+
+<rect x="88" y="424" width="544" height="64" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<circle cx="116" cy="456" r="12" fill="var(--accent)"/>
+<text x="116" y="460" text-anchor="middle" fill="var(--onacc)" font-size="12" font-weight="500">1</text>
+<text x="140" y="451" class="d tt" font-size="17" font-weight="500">Wissen</text>
+<text x="140" y="473" class="mu" font-size="13">strukturierte Ablage · Landkarte statt Enzyklopädie</text>
+
+<line x1="360" y1="506" x2="360" y2="530" stroke="var(--border)" stroke-width="3"/>
+<rect x="255" y="530" width="210" height="40" rx="20" fill="var(--surface2)" stroke="var(--border)"/>
+<text x="360" y="555" text-anchor="middle" class="d tt" font-size="16" font-weight="500">KI-Modell(e)</text>
+
+<line x1="656" y1="228" x2="688" y2="228" stroke="var(--border)" stroke-width="2"/>
+<line x1="656" y1="304" x2="688" y2="304" stroke="var(--border)" stroke-width="2"/>
+<line x1="656" y1="380" x2="688" y2="380" stroke="var(--border)" stroke-width="2"/>
+<line x1="656" y1="456" x2="688" y2="456" stroke="var(--border)" stroke-width="2"/>
+
+<rect x="688" y="196" width="72" height="292" rx="14" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.5"/>
+<text x="716" y="342" text-anchor="middle" transform="rotate(-90 716 342)" class="d tt" font-size="16" font-weight="500">Integration</text>
+<text x="742" y="342" text-anchor="middle" transform="rotate(-90 742 342)" class="mu" font-size="12">MCP · offene Standards</text>
+
+<line x1="760" y1="224" x2="800" y2="224" stroke="var(--border)" stroke-width="2"/>
+<line x1="760" y1="302" x2="800" y2="302" stroke="var(--border)" stroke-width="2"/>
+<line x1="760" y1="380" x2="800" y2="380" stroke="var(--border)" stroke-width="2"/>
+<line x1="760" y1="458" x2="800" y2="458" stroke="var(--border)" stroke-width="2"/>
+
+<text x="800" y="184" class="mu" font-size="13">reale Umgebung</text>
+<rect x="800" y="196" width="320" height="56" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<text x="820" y="220" class="tt" font-size="15" font-weight="500">Dokumentenarchiv</text>
+<text x="820" y="240" class="mu" font-size="12">ablegen · finden · verschlagworten</text>
+<rect x="800" y="274" width="320" height="56" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<text x="820" y="298" class="tt" font-size="15" font-weight="500">Smart Home</text>
+<text x="820" y="318" class="mu" font-size="12">Zustände lesen · schalten · prüfen</text>
+<rect x="800" y="352" width="320" height="56" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<text x="820" y="376" class="tt" font-size="15" font-weight="500">Monitoring &amp; Alarme</text>
+<text x="820" y="396" class="mu" font-size="12">Meßwerte · Dashboards · Störungen</text>
+<rect x="800" y="430" width="320" height="56" rx="10" fill="var(--surface)" stroke="var(--border)"/>
+<text x="820" y="454" class="tt" font-size="15" font-weight="500">Netzwerk &amp; Server</text>
+<text x="820" y="474" class="mu" font-size="12">Inventar · Betrieb</text>
+</svg>

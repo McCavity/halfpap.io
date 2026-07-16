@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 660" role="img" aria-labelledby="ttl desc" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<title id="ttl">Genesis - vom Nukleus zum lebenden System</title>
+<desc id="desc">Zeitstrahl in fünf abgehakten Stationen von März bis Juli 2026: Nukleus (eine Landkarten-Datei von 769 Bytes und Befehls-Gerüste aus einer KI-Schulung), Fundament (Wissensablage, Tageslogs, Versionierung), Integration (eigene MCP-Server, Homelab, erste Skills und Automationen), Lernen und Wartung (Lernprotokoll, Memory, Wartungsebene /monthly), Konsolidierung (Bereichs-Trennung, Fahrplan, Sichtbarkeit). Danach gestrichelt der Ausblick: wächst weiter mit mehr Struktur, Governance und lokalen Modellen.</desc>
+<style>
+:root{--bg:#f7f9fc;--surface:#ffffff;--surface2:#eef2f8;--text:#11151c;--muted:#525a68;--accent:#1f5fd0;--accent2:#1a4fb0;--onacc:#ffffff;--border:rgba(15,23,42,.14);}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0c10;--surface:#12151c;--surface2:#181c25;--text:#e7eaf0;--muted:#9aa3b2;--accent:#6aa0ff;--accent2:#8ab4ff;--onacc:#06080d;--border:rgba(255,255,255,.12);}}
+.d{font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;}
+.tt{fill:var(--text);}
+.mu{fill:var(--muted);}
+.ac{fill:var(--accent2);}
+</style>
+<rect x="0" y="0" width="1160" height="660" fill="var(--bg)"/>
+<text x="40" y="52" class="d tt" font-size="30" font-weight="700">Genesis <tspan class="ac">- vom Nukleus zum lebenden System</tspan></text>
+<text x="40" y="80" class="mu" font-size="15">dreieinhalb Monate täglicher Betrieb  ·  Stand: Juli 2026</text>
+
+<line x1="95" y1="350" x2="915" y2="350" stroke="var(--border)" stroke-width="3"/>
+<line x1="915" y1="350" x2="1000" y2="350" stroke="var(--accent)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+<rect x="1000" y="322" width="136" height="118" rx="14" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+<circle cx="170" cy="350" r="15" fill="var(--accent)"/>
+<path d="M162 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="170" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">März · Nukleus</text>
+<text x="170" y="392" text-anchor="middle" class="mu" font-size="13">eine Landkarten-Datei</text>
+<text x="170" y="411" text-anchor="middle" class="mu" font-size="13">und Befehls-Gerüste</text>
+<text x="170" y="430" text-anchor="middle" class="mu" font-size="13">aus einer KI-Schulung</text>
+<text x="170" y="456" text-anchor="middle" class="ac" font-size="12" font-weight="500">769 Bytes · 24 Zeilen</text>
+
+<circle cx="360" cy="350" r="15" fill="var(--accent)"/>
+<path d="M352 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="360" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">April · Fundament</text>
+<text x="360" y="392" text-anchor="middle" class="mu" font-size="13">Wissensablage gelebt</text>
+<text x="360" y="411" text-anchor="middle" class="mu" font-size="13">Tageslogs · Planung</text>
+<text x="360" y="430" text-anchor="middle" class="mu" font-size="13">Versionierung</text>
+
+<circle cx="545" cy="350" r="15" fill="var(--accent)"/>
+<path d="M537 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="545" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">Mai · Integration</text>
+<text x="545" y="392" text-anchor="middle" class="mu" font-size="13">eigene MCP-Server</text>
+<text x="545" y="411" text-anchor="middle" class="mu" font-size="13">Homelab angebunden</text>
+<text x="545" y="430" text-anchor="middle" class="mu" font-size="13">erste Skills · Automationen</text>
+
+<circle cx="730" cy="350" r="15" fill="var(--accent)"/>
+<path d="M722 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="730" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">Juni · Lernen &amp; Wartung</text>
+<text x="730" y="392" text-anchor="middle" class="mu" font-size="13">Lernprotokoll · Memory</text>
+<text x="730" y="411" text-anchor="middle" class="mu" font-size="13">Wartungsebene /monthly</text>
+<text x="730" y="430" text-anchor="middle" class="mu" font-size="13">Entschlacken als Routine</text>
+
+<circle cx="915" cy="350" r="15" fill="var(--accent)"/>
+<path d="M907 350 l6 7 l11 -13" fill="none" stroke="var(--onacc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="915" y="306" text-anchor="middle" class="d tt" font-size="16" font-weight="500">Juli · Konsolidierung</text>
+<text x="915" y="392" text-anchor="middle" class="mu" font-size="13">Bereichs-Trennung</text>
+<text x="915" y="411" text-anchor="middle" class="mu" font-size="13">Fahrplan · Fokus</text>
+<text x="915" y="430" text-anchor="middle" class="mu" font-size="13">sichtbar: diese Seite</text>
+<text x="915" y="456" text-anchor="middle" class="ac" font-size="12" font-weight="500">über 850 Wissens-Dateien</text>
+
+<text x="1068" y="306" text-anchor="middle" class="d mu" font-size="15" font-weight="500">wächst weiter</text>
+<text x="1068" y="358" text-anchor="middle" class="mu" font-size="12">mehr Struktur</text>
+<text x="1068" y="377" text-anchor="middle" class="mu" font-size="12">Governance</text>
+<text x="1068" y="396" text-anchor="middle" class="mu" font-size="12">lokale Modelle</text>
+</svg>
