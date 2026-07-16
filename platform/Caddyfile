@@ -47,6 +47,12 @@
 		file_server
 	}
 
+	@arbeitspartner host ki-arbeitspartner.halfpap.io
+	handle @arbeitspartner {
+		root * /srv/ki-arbeitspartner
+		file_server
+	}
+
 	# Fallback for local testing without a Host header → hub.
 	handle {
 		root * /srv/www

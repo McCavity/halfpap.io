@@ -1,0 +1,71 @@
+# KI-Arbeitspartner - an AI working partner, backed by a personal "KI-Betriebssystem" (AI operating system)
+
+> Concept page for Henning Halfpap's AI working partner: an AI that works with
+> his knowledge, his processes and his rules. Behind the customer-facing German
+> term "KI-Arbeitspartner" (AI working partner) sits the category term
+> "KI-Betriebssystem" (AI operating system). Private project, in daily
+> operation since March 2026, grown from a 769-byte nucleus. This page shows
+> the concept, not the internals - the repository stays private.
+
+## What it is
+
+Not software you install, but the layer between human and AI model. The model
+provides the intelligence; this layer turns it into a working partner that
+knows and keeps your context:
+
+- Knowledge: a structured store (projects, areas, references) with a "map
+  file" as the entry point - a map, not an encyclopedia.
+- Coordination: recurring workflows as commands - session start with a
+  situation picture, planning, review, clean daily shutdown.
+- Learning: mistakes and insights become protocol entries and rules instead
+  of repeating themselves.
+- Maintenance: the system de-bloats itself on a cadence - archive, condense,
+  measure.
+- Integration (cross-cutting): connection to the real environment via open
+  standards, so answers become actions.
+
+## What it does today (four examples from live operation)
+
+- Memory architecture: daily logs, learning protocol and long-term memory are
+  layered so every session starts with context instead of from zero.
+- Built-in maintenance layer: a monthly /monthly run de-bloats, archives and
+  measures - the most-forgotten layer of such systems.
+- Credential governance: secrets live in a keychain, never in plain text,
+  never in the knowledge store; clear rules govern which access is used where
+  and how it is handed over.
+- Homelab & MCP integration: the partner talks to the real environment
+  (document archive, smart home, monitoring, network) via the open Model
+  Context Protocol; three of those integrations are self-built and public.
+
+## Genesis
+
+March 2026: a 769-byte map file (24 lines) plus a handful of command stubs
+from an AI training course. Three and a half months of daily operation later:
+850+ structured knowledge files, own skills and MCP servers, hooks and
+automations, a lived learning protocol, and a maintenance layer that keeps
+growth in check. Four waves: Foundation (April), Integration (May), Learning +
+Maintenance (June), Consolidation & visibility (July). Honest flip side:
+growth creates maintenance debt; the system documents it and pays it down
+deliberately.
+
+## What it is NOT
+
+- Not a product: no download, no subscription, no course.
+- Not a chatbot or a prompt trick - the difference is the system around the AI:
+  knowledge, rules, memory, maintenance.
+- Not a blueprint to copy: the concept transfers, the copy does not.
+- Not finished: a living system never is.
+
+## Why it transfers
+
+The base concept is generic. Anyone with their own knowledge and recurring
+processes - a law firm with files and deadlines, a trade business with quotes
+and measurements, a freelancer with clients and workflows - has the raw
+material for such a partner. The core is plain text files and open standards
+(agent skills, MCP); your knowledge stays yours, it does not belong to the
+tool. This instance runs on Claude Code; the concept itself is tool-open.
+
+## Contact
+
+- Author: Henning Halfpap - https://henning.halfpap.io/
+- Email: henning@halfpap.io

@@ -1,0 +1,12 @@
+# robots.txt for ki-arbeitspartner.halfpap.io
+# Visibility is the goal - search and answer engines are welcome everywhere.
+User-agent: *
+Allow: /
+
+# Agent-readable summary: https://ki-arbeitspartner.halfpap.io/llms.txt
+
+# Training crawlers - default allow (visibility). To opt out, uncomment:
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /

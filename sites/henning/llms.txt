@@ -13,7 +13,8 @@ A red thread, not a straight line: naval communications officer (German Navy) �
 Java/J2EE development → Unix administration (DAB bank) → Solaris, ZFS and customer
 training for Sun Microsystems → Lead Systems Engineer at FactSet (large migrations
 CentOS 7 → AWS/Rocky 9, Redis clusters, 24/7 on-call) → a self-built "KI-OS"
-(Claude Code, MCP servers, agent skills) that automates real work.
+(Claude Code, MCP servers, agent skills) that automates real work. Concept
+page: https://ki-arbeitspartner.halfpap.io
 
 Recurring motifs: deep operational discipline, cross-layer systems thinking
 (hardware → OS → network → application → operations), and knowledge transfer.
@@ -37,6 +38,10 @@ More on the GitHub profile: https://github.com/McCavity
   Radio playout & live assist, native on the Mac — an homage to mAirList, openly
   vibecoded with Claude Code. Private repo, honest early stage; the page shows
   screenshots as proof of existence.
+- **KI-Arbeitspartner** — https://ki-arbeitspartner.halfpap.io
+  An AI working partner backed by a self-built "KI-Betriebssystem" (AI operating
+  system): structured knowledge, commands, memory, maintenance, MCP integration.
+  Concept page; the repository stays private, the page is the proof of existence.
 
 ## Services
 
