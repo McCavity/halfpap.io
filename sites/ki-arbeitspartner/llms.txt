@@ -41,7 +41,7 @@ knows and keeps your context:
 
 March 2026: a 769-byte map file (24 lines) plus a handful of command stubs
 from an AI training course. Three and a half months of daily operation later:
-850+ structured knowledge files, own skills and MCP servers, hooks and
+340+ structured knowledge files, own skills and MCP servers, hooks and
 automations, a lived learning protocol, and a maintenance layer that keeps
 growth in check. Four waves: Foundation (April), Integration (May), Learning +
 Maintenance (June), Consolidation & visibility (July). Honest flip side:
