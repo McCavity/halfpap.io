@@ -33,7 +33,8 @@ body {
 
 img,
 picture,
-svg {
+svg,
+video {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -397,6 +398,13 @@ a.card:hover {
 	font-size: var(--step--1);
 	/* Guard: long tokens (e.g. hyphenated product names) must wrap, not spill. */
 	overflow-wrap: break-word;
+}
+
+/* Genesis timelapse video: rounded to sit calmly inside its card. Playback is
+   gated in /js/genesis.js (reduced-motion → poster only; play only when in view). */
+.genesis-video {
+	border-radius: calc(var(--radius) - 1px);
+	background: var(--surface);
 }
 
 .hairline {
