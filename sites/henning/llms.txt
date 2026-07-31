@@ -21,6 +21,9 @@ Recurring motifs: deep operational discipline, cross-layer systems thinking
 
 ## What I built
 
+- **adsb-console** — https://github.com/McCavity/adsb-console
+  ATC console for a 7-inch touch panel on a home ADS-B receiver (dump1090-fa);
+  radar with airfield layer, range polar, altitude profile.
 - **alarm-button-firmware** — https://github.com/McCavity/alarm-button-firmware
   ESP32-S3 firmware for a physical status & acknowledge button.
 - **cadiz-countdown** — https://github.com/McCavity/cadiz-countdown
