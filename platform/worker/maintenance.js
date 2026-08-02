@@ -77,9 +77,9 @@ function maintenanceResponse(request) {
 
 export function maintenanceData() {
   return {
-    status: "maintenance",
+    status: "unavailable",
     code: 503,
-    message: "Planned maintenance. The site will return shortly.",
+    message: "Origin unreachable. The site will be back shortly.",
     retry_after_seconds: RETRY_AFTER,
     unaffected: ["wetter.halfpap.io"],
   };
@@ -87,10 +87,10 @@ export function maintenanceData() {
 
 export function maintenanceText() {
   return [
-    "halfpap.io — Wartungsarbeiten",
+    "halfpap.io — gerade nicht erreichbar",
     "",
-    "Die Seite ist gerade nicht erreichbar. Sie kommt in Kürze zurück.",
-    "This site is temporarily down for maintenance and will be back shortly.",
+    "Sie kommt in Kürze zurück — bitte in ein paar Minuten noch einmal versuchen.",
+    "This site is temporarily unavailable and will be back shortly.",
     "",
     "Nicht betroffen / unaffected: wetter.halfpap.io",
     "",
@@ -106,7 +106,7 @@ export function maintenancePage() {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Wartungsarbeiten — halfpap.io</title>
+<title>Gerade nicht erreichbar — halfpap.io</title>
 <style>
   :root {
     --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -164,9 +164,9 @@ export function maintenancePage() {
 </head>
 <body>
 <main>
-  <h1><span class="dot" aria-hidden="true"></span>Wartungsarbeiten</h1>
-  <p class="lead">Diese Seite ist gerade nicht erreichbar und kommt in Kürze zurück.</p>
-  <p class="en" lang="en">This site is temporarily down for maintenance and will be back shortly.</p>
+  <h1><span class="dot" aria-hidden="true"></span>Gerade nicht erreichbar</h1>
+  <p class="lead">Sie kommt in Kürze zurück — bitte in ein paar Minuten noch einmal versuchen.</p>
+  <p class="en" lang="en">This site is temporarily unavailable and will be back shortly.</p>
   <hr class="rule">
   <p class="note">
     Nicht betroffen ist <a href="https://wetter.halfpap.io">wetter.halfpap.io</a> —

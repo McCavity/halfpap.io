@@ -72,22 +72,33 @@ open /tmp/wartung.html
 
 ## Deploying
 
-Not done yet. Required, in order:
+**Workers is available on this account** — checked in the dashboard on
+2026-08-02: Free plan, `0 / 100,000` requests, and the one-time `workers.dev`
+subdomain is already configured. Free-plan limits that matter here: 100,000
+requests/day, 10 ms CPU per request. A pass-through costs almost no CPU (the
+wait on the origin does not count), and the failure path builds a ~2.7 kB
+string.
 
-1. **Confirm Workers is enabled** for the zone. The free tier (100k requests
-   per day) is far above what this site sees, but that it is *available on this
-   account* has not been verified.
-2. **Create a scoped API token** — `Workers Scripts: Edit` and
-   `Workers Routes: Edit`, limited to the `halfpap.io` zone. Store it in the
-   Keychain and register it, so the consuming side can find it without the
-   secret travelling.
-3. **Deploy** with `wrangler deploy` (see `wrangler.toml.example`).
-4. **Add routes** for the four tunnel-backed hostnames — see
-   `../tunnel-routing.md`. **Not** `wetter.halfpap.io`.
-5. **Verify against the failure case, not the happy path.** Stop the Caddy
-   container, load the site, confirm the maintenance page appears; start Caddy,
+Steps:
+
+1. **Authenticate.** `npx wrangler login` — OAuth in the browser. **No API
+   token needed**, and therefore no long-lived secret to store or rotate.
+2. **Deploy the script only**, without routes. Nothing on the live site is
+   touched yet.
+3. **Add routes one at a time**, starting with the least critical hostname, and
+   confirm normal traffic still works after each. See `../tunnel-routing.md`
+   for the list. **Not** `wetter.halfpap.io`.
+4. **Verify against the failure case, not the happy path.** Stop the Caddy
+   container, load the site, confirm the fallback page appears; start Caddy,
    confirm the site returns. A fallback that has never actually caught anything
    is untested.
 
-Step 5 is the one that decides whether this works. The other four only decide
+Step 4 is the one that decides whether this works. The others only decide
 whether it exists.
+
+## A note on wording
+
+The page deliberately does **not** say "scheduled maintenance". It answers
+*every* origin outage, including ones nobody planned — and a page claiming a
+planned window during an unplanned crash would be stating something untrue on
+the operator's own business card. "Gerade nicht erreichbar" is true either way.
