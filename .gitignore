@@ -23,3 +23,6 @@ sites/*/favicon.svg
 # … außer site-eigene Favicons (maclist bringt sein App-Icon mit, sync-content.sh
 # überschreibt es nicht — siehe dortige Favicon-Schleife)
 !sites/maclist/favicon.svg
+
+# Worker deploy config (contains account_id)
+platform/worker/wrangler.toml

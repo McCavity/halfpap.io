@@ -1,0 +1,19 @@
+# Copy to wrangler.toml and fill in account_id (which is not public).
+# wrangler.toml is gitignored for that reason.
+
+name = "halfpap-maintenance"
+main = "maintenance.js"
+compatibility_date = "2026-08-02"
+
+# account_id = "<your account id>"
+
+# Routes: only the tunnel-backed hostnames.
+# wetter.halfpap.io is served from separate hardware and must NOT be listed —
+# routing it here would put an unnecessary hop in front of a service that is
+# unaffected by the outage this Worker exists for.
+routes = [
+  { pattern = "www.halfpap.io/*",               zone_name = "halfpap.io" },
+  { pattern = "henning.halfpap.io/*",           zone_name = "halfpap.io" },
+  { pattern = "maclist.halfpap.io/*",           zone_name = "halfpap.io" },
+  { pattern = "ki-arbeitspartner.halfpap.io/*", zone_name = "halfpap.io" },
+]
