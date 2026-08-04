@@ -35,8 +35,16 @@
 
 	<!--
 	  Befristeter Wartungshinweis für das Fenster am 06.08.2026
-	  (Hypervisor-Update). Entfernen nach dem Fenster: Revert dieses
-	  Commits + ./platform/deploy.sh.
+	  (Hypervisor-Update).
+
+	  ENTFERNEN NACH DEM FENSTER: nur diesen Kommentar und das folgende
+	  .notice-bar-Div loeschen — in allen VIER index.html — danach
+	  ./platform/deploy.sh und am Edge gegenpruefen, nicht am Origin.
+
+	  KEIN blanker Revert des einfuehrenden Commits: der trug auch zwei
+	  README-Korrekturen und die .notice-bar-Regel in shared/css/base.css.
+	  Die Regel bleibt bewusst stehen — wirkungslos ohne Markup, und beim
+	  naechsten Fenster sofort wieder da.
 	-->
 	<div class="notice-bar">
 		<p class="container">
