@@ -173,6 +173,40 @@ section {
 	margin-top: var(--space-m);
 }
 
+/* ---- Notice bar (temporary announcements) ------------------------------- */
+
+/*
+ * Sits above the site header and carries a short, time-bound message — a
+ * planned maintenance window, for instance. Deliberately built from the
+ * existing tokens rather than a new warning colour: a personal site announcing
+ * two hours of downtime does not need an alarm palette, and a new colour would
+ * need its own dark and high-contrast variants to stay legible.
+ *
+ * The bar is static markup. It appears with a deploy and disappears with one —
+ * there is no clock in it that could quietly keep it alive past its window.
+ */
+.notice-bar {
+	background: var(--surface-2);
+	border-bottom: 1px solid var(--border);
+}
+
+/*
+ * Kein `margin: 0` hier — der Reset nullt es bereits, und die Regel waere
+ * spezifischer als `.container` und wuerde dessen `margin-inline: auto`
+ * kippen: die Zeile stuende dann linksbuendig statt auf der Textachse der
+ * Seite. Genau so ist es beim ersten lokalen Blick am 04.08. ausgesehen.
+ */
+.notice-bar p {
+	padding-block: var(--space-s);
+	font-size: var(--step--1);
+	color: var(--muted);
+}
+
+.notice-bar strong {
+	color: var(--text);
+	font-weight: 600;
+}
+
 /* ---- Site header / nav -------------------------------------------------- */
 
 .site-header {

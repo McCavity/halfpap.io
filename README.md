@@ -35,9 +35,15 @@ Requires Docker.
 ```bash
 cd platform
 docker compose up -d
-curl -H "Host: www.halfpap.io"     http://localhost:8080/
-curl -H "Host: henning.halfpap.io" http://localhost:8080/
+curl -H "Host: www.halfpap.io"     http://localhost:8082/
+curl -H "Host: henning.halfpap.io" http://localhost:8082/
 ```
+
+The host port is **8082**, not 8080 — `compose.yaml` maps `8082:8080`, and the
+container's own port is the 8080 that used to be quoted here. Whatever else is
+listening on 8080 will answer instead and look like a broken deploy: on the
+author's machine that is a CheckMK container, which answered a confident `302`
+to the command as it was previously written.
 
 ## License
 
