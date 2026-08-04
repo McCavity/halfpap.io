@@ -45,6 +45,32 @@ listening on 8080 will answer instead and look like a broken deploy: on the
 author's machine that is a CheckMK container, which answered a confident `302`
 to the command as it was previously written.
 
+## Deploying a CSS change: bump the version stamp
+
+Stylesheets are linked with a version query — `href="/css/base.css?v=2026-08-04"`.
+**Change it in the same commit that changes any file under `shared/css/`.**
+
+The reason is a real one, measured on 2026-08-04. Cloudflare caches `.css` at the
+edge by extension with `max-age=14400`; HTML is not cached. A deploy therefore
+publishes new markup **immediately** and new styles **up to four hours later** —
+and in between, visitors get the new page wearing the old stylesheet. That day it
+meant a maintenance banner served unstyled on the business card, while both the
+origin and the local container were serving the correct file. Every check that
+looked at the origin said the deploy was fine.
+
+A changed query string is a new cache key, so the fetch goes to the origin and the
+result is correct on the first request. This needs no dashboard access and no API
+token for cache purging — which is also why it is preferred over purging.
+
+The version stamp is a date, not a counter: two changes on the same day want the
+same key only if the CSS is byte-identical. When in doubt, verify what the *edge*
+serves, not what the origin holds:
+
+```bash
+curl -s https://www.halfpap.io/css/base.css | grep -c "<the new rule>"
+curl -sI https://www.halfpap.io/css/base.css | grep -i "cf-cache-status\|age"
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
