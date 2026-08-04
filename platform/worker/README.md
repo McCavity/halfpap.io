@@ -4,8 +4,8 @@ An edge-side fallback for the tunnel-backed hostnames. Normal traffic passes
 through untouched; when the origin cannot be reached, visitors get a
 self-contained maintenance page instead of a Cloudflare error screen.
 
-**Status: written, not deployed.** Deploying needs a Cloudflare API token that
-does not exist yet — see *Deploying* below.
+**Status: deployed on 2026-08-02** and routed on all four tunnel-backed
+hostnames, verified against a real origin outage — see *Deploying* below.
 
 ## Why this exists
 
@@ -43,6 +43,13 @@ The `no-store` matters: a cached maintenance page would outlive the outage.
 - **No scheduled announcement banner.** Injecting "maintenance on <date>" into
   live pages would need a redeploy per window and a second code path that is
   exercised twice a year. The outage itself is short and acceptable.
+
+  This still holds for the Worker. When an announcement was actually wanted for
+  the window on 2026-08-06, it went into the pages themselves (`.notice-bar` in
+  `shared/css/base.css`) instead: the origin is reachable in the days *before*
+  the outage, which is exactly when an announcement is read, and a static bar
+  needs no CSP rewrite — `style-src 'self'` would have blocked an injected
+  inline style at the edge.
 - **No manual on/off switch.** That would need KV or a redeploy to flip. The
   automatic case already covers the need.
 
