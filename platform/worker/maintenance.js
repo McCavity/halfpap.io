@@ -89,7 +89,7 @@ export function maintenanceText() {
   return [
     "halfpap.io — gerade nicht erreichbar",
     "",
-    "Sie kommt in Kürze zurück — bitte in ein paar Minuten noch einmal versuchen.",
+    "halfpap.io kommt in Kürze zurück, bitte versuchen Sie es in ein paar Minuten noch einmal.",
     "This site is temporarily unavailable and will be back shortly.",
     "",
     "Nicht betroffen / unaffected: wetter.halfpap.io",
@@ -165,7 +165,7 @@ export function maintenancePage() {
 <body>
 <main>
   <h1><span class="dot" aria-hidden="true"></span>Gerade nicht erreichbar</h1>
-  <p class="lead">Sie kommt in Kürze zurück — bitte in ein paar Minuten noch einmal versuchen.</p>
+  <p class="lead">halfpap.io kommt in Kürze zurück, bitte versuchen Sie es in ein paar Minuten noch einmal.</p>
   <p class="en" lang="en">This site is temporarily unavailable and will be back shortly.</p>
   <hr class="rule">
   <p class="note">
