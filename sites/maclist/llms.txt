@@ -10,9 +10,12 @@
 A tool to drive your own radio show rather than just play it back. No server,
 no subscription, no cloud: start it and run your hour.
 
-Features today (Iteration 10):
+Features today (Iteration 11):
 
 - Two players side by side (live assist): one runs, you load and fire the next.
+- Visible playhead in both players; seek within a track while it plays.
+- Play/pause with a separate reset, so a mis-click no longer throws the
+  playhead back to 0:00 and ruins the backtiming.
 - Playlists as `.m3u` — the open format, nothing proprietary.
 - Sectioned, sortable playlist; drag tracks in straight from Finder.
 - Backtimer — countdown to the target time so handovers land on the second.

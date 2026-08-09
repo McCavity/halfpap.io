@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 660" role="img" aria-labelledby="ttl desc" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
 <title id="ttl">macList Roadmap</title>
-<desc id="desc">Themen-Roadmap von macList: Etappe 0 Fundament (erledigt), You-are-here nach Iteration 10 (erledigt), vor Etappe 1 Playout-Tiefe, 2 Jingles, 3 Signalkette, 4 Hardware, danach ferner Horizont mit Planning-App, Backend und Processing-Multibus.</desc>
+<desc id="desc">Themen-Roadmap von macList: Etappe 0 Fundament (erledigt), You-are-here nach Iteration 11 (erledigt), vor Etappe 1 Playout-Tiefe, 2 Jingles, 3 Signalkette, 4 Hardware, danach ferner Horizont mit Planning-App, Backend und Processing-Multibus.</desc>
 <style>
 :root{--bg:#f7f9fc;--surface:#ffffff;--surface2:#eef2f8;--text:#11151c;--muted:#525a68;--accent:#1f5fd0;--accent2:#1a4fb0;--onacc:#ffffff;--border:rgba(15,23,42,.14);}
 @media (prefers-color-scheme:dark){:root{--bg:#0a0c10;--surface:#12151c;--surface2:#181c25;--text:#e7eaf0;--muted:#9aa3b2;--accent:#6aa0ff;--accent2:#8ab4ff;--onacc:#06080d;--border:rgba(255,255,255,.12);}}

@@ -26,10 +26,11 @@ Recurring motifs: deep operational discipline, cross-layer systems thinking
   radar with airfield layer, range polar, altitude profile.
 - **alarm-button-firmware** — https://github.com/McCavity/alarm-button-firmware
   ESP32-S3 firmware for a physical status & acknowledge button.
-- **cadiz-countdown** — https://github.com/McCavity/cadiz-countdown
-  A split-flap countdown web module; live at https://cadiz.halfpap.io.
 - **claude-marketplace** — https://github.com/McCavity/claude-marketplace
   Personal Claude Code / Codex plugin marketplace (agent skills + MCP servers).
+- **jeelink-davis** — https://github.com/McCavity/jeelink-davis
+  Receiving and processing chain for a Davis weather station via a JeeLink USB
+  receiver; radio to dashboard, including a lightning sensor.
 - **halfpap.io** — https://github.com/McCavity/halfpap.io
   This site: static, accessible, agent-native (llms.txt + JSON-LD) — the live proof.
 
