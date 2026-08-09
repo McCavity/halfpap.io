@@ -397,6 +397,13 @@ section {
 
 .tile-grid {
 	display: grid;
+	/* auto-fit ist hier richtig, nicht auto-fill (gemessen 2026-08-09): auto-fit
+	   klappt nur LEERE Spuren ein. Bei 5 Projektkacheln in 4 Spalten ist keine
+	   Spur leer, der befürchtete Voll-Breiten-Effekt tritt also nie auf. Wirksam
+	   wird der Unterschied allein im 2-Kachel-Abschnitt „Aus der Werkstatt", und
+	   dort füllt auto-fit die Reihe (2x 540px) statt sie halb leer zu lassen
+	   (2x 258px). Die Empfehlung in docs/specs/2026-07-26 gilt für diese Seite
+	   nicht. */
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
 	gap: var(--space-l);
 }
