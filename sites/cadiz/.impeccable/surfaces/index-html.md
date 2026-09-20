@@ -33,8 +33,11 @@ Bildverarbeitung — zwei Fallen, beide am Bestand belegt:
    (Essen, Boeden, Tische) kann der Lagesensor die Drehung nicht bestimmen und traegt eine
    falsche Orientierung ein. Betroffen bisher: die Jakobsmuschel (09.09.), das Solomillo und
    die Oliven (10.09.) — alle drei tragen Orientierung 6, sind aber im Querformat richtig.
-   Beim Aufbereiten: Aufnahmen von oben ohne Rotation uebernehmen und am Bild gegenlesen.
-   Die Takelage (05.09.) dagegen war echt hochkant, dort stimmte die Angabe.
+   ⚠️ Praezisiert am 20.09.: Die Regel greift NUR bei Aufnahmen senkrecht nach unten, nicht
+   bei jeder Datei mit Orientierung 6. Gegenbeispiele, bei denen die Angabe stimmt: die
+   Takelage (05.09., Blick nach oben) und der Blick aus dem Flugzeugfenster (03.09.). Die
+   Kennung allein entscheidet nichts — es entscheidet das Motiv, und das sieht man erst am
+   gedrehten und am ungedrehten Bild nebeneinander.
 
 2. **Die Auswahl ueber den Aufnahmezeitpunkt ist nicht eindeutig**, wenn mehrere Geraete im
    Spiel sind. Zwei Aufnahmen koennen dieselbe Sekunde tragen; am 07.09. fuehrte das zum
