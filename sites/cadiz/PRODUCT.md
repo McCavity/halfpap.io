@@ -105,10 +105,35 @@ selten überarbeitet.
 **Veröffentlichung**
 
 - Das Repo ist **public**, die Bildoriginale sind privat, die Seite ist öffentlich.
-- Bild-Derivate liegen in `sites/cadiz/media/`, zunächst gitignored; getrackt wird in **einem**
-  Commit, sobald das Design eingefroren ist.
-- Der Track-Commit ist die harte Schwelle: von der Seite läßt sich ein Bild entfernen, aus der
-  Historie eines öffentlichen Repos nicht.
+- Bild-Derivate liegen in **`sites/cadiz/assets/photos/`** und sind **getrackt**.
+- ✅ **Die Schwelle ist genommen** (Henning 20.09.): Die Derivate gehören in die Historie. Von
+  der Seite läßt sich ein Bild entfernen, aus der Historie eines öffentlichen Repos nicht — die
+  Entscheidung ist damit gefallen und gilt für alle weiteren Bilder.
+
+⚠️ **Wie der Stand entstand, ist die eigentliche Lehre.** Das Dokument beschrieb bis zum
+20.09. einen Schutz, den es nie gab: Bilder unter `sites/cadiz/media/`, „zunächst gitignored",
+und den Track-Commit als bewußt zu nehmende Schwelle. Gemessen am 20.09.:
+
+| Behauptet | Gemessen |
+|---|---|
+| Pfad `sites/cadiz/media/` | `sites/cadiz/assets/photos/` |
+| gitignored bis zum Track-Commit | **keine gitignore-Regel** — weder für den einen Pfad noch für den anderen |
+| Ein bewußter Track-Commit | 74 Bilder, mitgelaufen seit `204e42c` |
+
+Die Schwelle wurde also nicht übersprungen, sondern war nie gebaut. Aufgefallen ist es nur,
+weil ein Bild als `modified` im Status stand, wo ein ignoriertes Bild gar nicht hätte
+auftauchen dürfen. **Eine gitignore-Regel, die man aufschreibt statt sie zu prüfen, schützt
+nichts** — `git check-ignore -v <pfad>` beantwortet die Frage in einer Sekunde.
+
+Entschärft haben den Fall zwei Umstände, die beide Glück und nicht Vorsorge waren: die
+Derivate tragen **keinen EXIF-Block und keine GPS-Daten** (der PIL-Weg verwirft sie), und zum
+Zeitpunkt des Befunds war **nichts gepusht** — 20 Commits lagen lokal voraus. Wäre eine der
+beiden Bedingungen anders gewesen, hätte das Dokument den Irrtum gedeckt statt ihn zu zeigen.
+
+✅ **Gegengeprüft am 20.09.**, weil getrackt nicht dasselbe ist wie verwendet: von 77
+getrackten Bildern erscheinen 73 auf einer Seite. Die vier übrigen sind Entwurfsartefakte aus
+`.impeccable/` (Comp-Raster, Font-Vergleiche, ein Mock) — **kein Reisefoto ist verwaist**. Die
+Prüfung gehört vor jeden weiteren Push wiederholt, solange Bilder dazukommen.
 
 ## Brand Commitments
 
