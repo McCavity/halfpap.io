@@ -39,16 +39,21 @@
 		}
 	});
 
-	// Ein Ort fuehrt zum Tag: erst schliessen, dann springen, damit das Ziel
-	// sichtbar ist und der Fokus dort landet.
+	// Ein Ort fuehrt zum Tag. Zeigt er auf einen Anker DIESER Seite, wird der
+	// Sprung selbst ausgefuehrt, damit der Dialog vorher schliesst und der Fokus
+	// am Ziel landet. Ein Link auf eine Kapitelseite wird NICHT abgefangen — er
+	// soll ganz normal navigieren.
 	dialog.addEventListener("click", function (event) {
-		var link = event.target.closest ? event.target.closest(".maproute__link") : null;
-		if (!link) {
+		var pin = event.target.closest ? event.target.closest(".maproute__pin") : null;
+		if (!pin) {
+			return;
+		}
+		var href = pin.getAttribute("href") || "";
+		if (href.charAt(0) !== "#") {
 			return;
 		}
 		event.preventDefault();
-		var id = link.getAttribute("href").slice(1);
-		var target = document.getElementById(id);
+		var target = document.getElementById(href.slice(1));
 		dialog.close();
 		if (target) {
 			target.scrollIntoView({ block: "center" });
