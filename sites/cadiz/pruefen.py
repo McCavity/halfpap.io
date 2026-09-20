@@ -74,6 +74,41 @@ for s in seiten:
     if h.count("<p") != h.count("</p>"):
         melde(rel, f"<p> unbalanciert ({h.count('<p')} auf, {h.count('</p>')} zu)")
 
+# Nachbarschaft: zeigt jedes Kapitel auf seine echten Nachbarn?
+# ⚠️ Diese Pruefung fehlte, und genau deshalb blieb im Kapitel 12.09. ein
+# `../../#tag-13-09` stehen, nachdem das Kapitel 13.09. gebaut war. Der Link
+# war gueltig — er zielte nur an die Startseite statt auf das Kapitel. Wer nur
+# prueft, ob ein Verweis aufloest, findet so etwas nie.
+kapitel = sorted((WURZEL / "tag").glob("*/index.html"))
+namen = [k.parent.name for k in kapitel]
+for i, k in enumerate(kapitel):
+    h = k.read_text()
+    rel = k.relative_to(WURZEL)
+    for richtung, nachbar in (("prev", namen[i - 1] if i else None),
+                              ("next", namen[i + 1] if i + 1 < len(namen) else None)):
+        m = re.search(r'chapter__nav-link--' + richtung + r'" href="([^"]+)"', h)
+        if nachbar is None:
+            continue
+        if not m:
+            melde(rel, f"kein {richtung}-Link, erwartet wurde {nachbar}")
+        elif m.group(1) != f"../{nachbar}/":
+            melde(rel, f"{richtung} zeigt auf {m.group(1)}, erwartet ../{nachbar}/")
+
+# Startseite: fuehrt das Tagesbild dahin wie sein Reiter?
+start = (WURZEL / "index.html").read_text()
+for m in re.finditer(r'<li class="day[^"]*" id="tag-(\d\d-\d\d)">(.*?)</li>', start, re.S):
+    tag, block = m.group(1), m.group(2)
+    bild = re.search(r'day__thumblink" href="([^"]+)"', block)
+    reiter = re.search(r'day__tab" href="([^"]+)"', block)
+    if reiter and not bild:
+        melde("index.html", f"Tag {tag}: Reiter verlinkt, das Bild nicht")
+    elif bild and reiter and bild.group(1) != reiter.group(1):
+        melde("index.html", f"Tag {tag}: Bild -> {bild.group(1)}, Reiter -> {reiter.group(1)}")
+
+# Arbeitsreste, die nie ausgeliefert werden duerfen
+for p in WURZEL.rglob("*.vor-anonymisierung"):
+    melde(p.relative_to(WURZEL), "Sicherung vor der Anonymisierung — gehoert nicht ins Repo")
+
 medien = [p for p in (WURZEL / "assets").rglob("*")
           if p.is_file() and p.suffix.lower() in {".jpg", ".jpeg", ".png", ".mp4", ".webp", ".svg"}]
 for p in medien:

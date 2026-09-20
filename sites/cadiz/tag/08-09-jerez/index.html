@@ -205,7 +205,7 @@
 </div>
 
 <button class="notebutton" type="button" id="note-open" aria-haspopup="dialog">
-	<span class="notebutton__hint">Über diese Seite</span>
+	<span class="notebutton__hint" aria-hidden="true">Über diese Seite</span>
 	<span aria-hidden="true">i</span>
 	<span class="visually-hidden">Über diese Seite</span>
 </button>
@@ -236,7 +236,7 @@
 </dialog>
 
 <button class="mapbutton" type="button" id="map-open" aria-haspopup="dialog">
-	<span class="mapbutton__hint">Karte</span>
+	<span class="mapbutton__hint" aria-hidden="true">Karte</span>
 	<img src="../../assets/plates/map-badge.png" width="815" height="830" alt="Wohin wir gekommen sind — Karte öffnen">
 </button>
 
@@ -258,7 +258,7 @@
 			<span class="maproute__stick" data-pin="3" aria-hidden="true"></span>
 			<a class="maproute__pin maproute__pin--left" data-pin="3" href="../10-09-rota/"><span class="maproute__place">Rota</span> <span class="maproute__date hand">10.09.</span></a>
 			<span class="maproute__stick" data-pin="4" aria-hidden="true"></span>
-			<a class="maproute__pin maproute__pin--right maproute__pin--here" data-pin="4" href="./"><span class="maproute__place">Jerez de la Frontera</span> <span class="maproute__date hand">08.09.</span></a>
+			<a aria-current="page" class="maproute__pin maproute__pin--right" data-pin="4" href="./"><span class="maproute__place">Jerez de la Frontera</span> <span class="maproute__date hand">08.09.</span></a>
 			<span class="maproute__stick" data-pin="5" aria-hidden="true"></span>
 			<a class="maproute__pin maproute__pin--right" data-pin="5" href="../07-09-gibraltar/"><span class="maproute__place">Gibraltar</span> <span class="maproute__date hand">07.09.</span></a>
 		</div>

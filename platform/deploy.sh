@@ -39,6 +39,11 @@ rsync -az --delete \
 	--exclude='.git/' \
 	--exclude='*.local' \
 	--exclude='platform/deploy.env' \
+	--exclude='.impeccable/' \
+	--exclude='PRODUCT.md' \
+	--exclude='pruefen.py' \
+	--exclude='regions.json' \
+	--exclude='*.vor-anonymisierung' \
 	./ "${SSH_TARGET}:${DEPLOY_PATH}/"
 
 echo "→ [3/3] (re)starting Caddy on ${DEPLOY_HOST}"
