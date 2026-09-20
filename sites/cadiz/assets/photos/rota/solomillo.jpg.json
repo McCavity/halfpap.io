@@ -1,6 +1,5 @@
 {
   "origin": "Eigene Aufnahme, Photos.app — IMG_7110.HEIC, aufgenommen 2026-09-10 13:43",
-  "selection": "Aus den Aufnahmen des Facebook-Beitrags vom 10.09., ueber den Aufnahmezeitpunkt wiedergefunden (82 Treffer auf 80 Zeitstempel — zwei Aufnahmen teilen sich eine Sekunde).",
-  "processing": "HEIC -> JPEG (sips), EXIF-Orientierung angewandt, auf 1200px Breite (Lanczos), Q85",
-  "note": "Kein generiertes Bild. Urheber: Henning Halfpap."
+  "processing": "HEIC -> JPEG (sips), OHNE EXIF-Rotation uebernommen, auf 1400px Breite (Lanczos), Q85",
+  "note": "Kein generiertes Bild. Urheber: Henning Halfpap. Die EXIF-Orientierung 6 wird hier bewusst NICHT angewandt: die Aufnahme (Solomillo) entstand senkrecht von oben, und dabei kann der Lagesensor die Drehung nicht bestimmen — er traegt dann eine Orientierung ein, die nicht stimmt (Henning 20.09.). Gilt fuer alle Aufnahmen von oben: Essen, Boeden, Tische."
 }

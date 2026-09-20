@@ -27,6 +27,20 @@ Ortszuordnung, an den Texten verifiziert: Cádiz → 03.09. (Anreisetag) · Gibr
 Jerez → 08.09. · Rota → 10.09. · El Puerto de Santa María → **15.09.**, nicht 05.09.: am 05.09.
 wurde die Fähre nicht verlassen, was der Text vom 15.09. wörtlich belegt.
 
+Bildverarbeitung — zwei Fallen, beide am Bestand belegt:
+
+1. **EXIF-Orientierung ist eine Behauptung, keine Auskunft.** Bei Aufnahmen senkrecht von oben
+   (Essen, Boeden, Tische) kann der Lagesensor die Drehung nicht bestimmen und traegt eine
+   falsche Orientierung ein. Betroffen bisher: die Jakobsmuschel (09.09.), das Solomillo und
+   die Oliven (10.09.) — alle drei tragen Orientierung 6, sind aber im Querformat richtig.
+   Beim Aufbereiten: Aufnahmen von oben ohne Rotation uebernehmen und am Bild gegenlesen.
+   Die Takelage (05.09.) dagegen war echt hochkant, dort stimmte die Angabe.
+
+2. **Die Auswahl ueber den Aufnahmezeitpunkt ist nicht eindeutig**, wenn mehrere Geraete im
+   Spiel sind. Zwei Aufnahmen koennen dieselbe Sekunde tragen; am 07.09. fuehrte das zum
+   falschen Bild (Spielwarenladen statt Telefonzelle). Jedes gewaehlte Bild wird gegen seine
+   Bildunterschrift gegengelesen, bevor es steht.
+
 Proof/content: 63.739 Zeichen eigener Text, abends während der Reise geschrieben; 1.534 eigene
 Medien in Originalqualität; 479 verortete Aufnahmen; fünfzehn Tage mit Material.
 
