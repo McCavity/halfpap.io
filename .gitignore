@@ -26,3 +26,9 @@ sites/*/favicon.svg
 
 # Worker deploy config (contains account_id)
 platform/worker/wrangler.toml
+
+# Claude Code: lokale Einstellungen bleiben lokal (Hooks kommen beim Install zurueck).
+.claude/settings.local.json
+# impeccable-Engine: plattformspezifisches Binary (12 MB, darwin-arm64), wird von
+# `npx impeccable install/update` geholt. Gehoert nicht in ein oeffentliches Repo.
+.claude/skills/impeccable/scripts/bin/
