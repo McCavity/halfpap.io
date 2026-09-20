@@ -1,0 +1,8 @@
+{
+  "prompt": "A hand-drawn paper map of the Atlantic coast of Andalusia in the manner of an old pen-and-ink chart, landscape ~3:2. Aged off-white paper with visible fold creases; coastline as a fine vermillion ink contour; Atlantic as a flat deep blue-teal wash; land plain with a few thin ink lines for roads and a river. Geography drawn accurately: the Bay of Cadiz opening to the Atlantic with the narrow peninsula of Cadiz; Rota and El Puerto de Santa Maria north across the bay; Jerez de la Frontera inland to the northeast; the Rock of Gibraltar to the southeast. Five small ink circles with hand-lettered names in small neat capitals. A thin uneven hand-drawn vermillion route line connecting them. NOTHING ELSE: no compass rose, scale bar, legend, cartouche, border, photographs or pins. ABSOLUTELY NOT a digital map: no tiles, street grid, Google/Mapbox styling, park polygons, motorway ribbons or drop-shadow pins. Palette: aged paper off-white, one deep blue-teal, one muted vermillion, near-black lettering.",
+  "model": "gemini-3-pro-image",
+  "generator": "impeccable generate-image via OpenAI-compatible path (nanobanana-render MCP)",
+  "generated": "2026-09-20",
+  "note": "Gezeichnete Karte, kein Kartendienst. Geographie am Ergebnis geprueft: Cadiz auf der Landzunge, El Puerto und Rota noerdlich ueber der Bucht, Jerez im Landesinneren, Gibraltar im Suedosten — alle fuenf korrekt platziert.",
+  "approved": true
+}

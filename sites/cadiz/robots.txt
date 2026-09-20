@@ -1,0 +1,5 @@
+# cadiz.halfpap.io — ein privater Reiseblog, oeffentlich lesbar.
+User-agent: *
+Allow: /
+
+Sitemap: https://cadiz.halfpap.io/llms.txt
