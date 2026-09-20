@@ -1,0 +1,11 @@
+{
+  "prompt": "Use the provided photograph as the visual reference and extract ONLY the fridge magnet from it, as a clean production asset with a genuinely transparent background.\n\nThe object: a moulded souvenir fridge magnet shaped like the skyline of Cádiz. Along its top edge, in relief, stand the city's landmarks — a domed cathedral with a golden dome, white towers, and fortress walls — rendered in painted ceramic-like relief with blue, white, terracotta and turquoise. Across the lower half, in large flowing cursive script with a thick gold glitter finish, the word \"Cádiz\". The magnet has the soft irregular outline of a moulded object, not a rectangle.\n\nRemove completely: the fridge door behind it, the metal surface, the other magnets at the edges, the door handle, any shadow cast onto the fridge, and every trace of the room. Nothing of the background may remain, not at the edges, not between the relief elements.\n\nPreserve exactly: the magnet's own silhouette including every notch of the skyline, the relief depth and its own shading, the gold glitter texture of the lettering, and the painted colours as photographed. Do not redraw, do not restyle, do not smooth the relief into a flat illustration, do not enlarge it to fill the frame — keep its proportions and clear margins around it.\n\nCut the background to genuine transparent alpha, including the gaps between the towers and inside the lettering. Keep the magnet itself fully opaque; retain partial alpha only at genuinely soft edges. No chroma background, no baked-in checkerboard, no matte. Output a transparent PNG cutout.\n",
+  "createdAt": "2026-09-20T15:29:15.748Z",
+  "tool": "impeccable generate-image",
+  "model": "gpt-image-2.5-flare",
+  "background": "transparent",
+  "outputFormat": "png",
+  "refs": [
+    ".impeccable/build/crops/magnet-cadiz.png"
+  ]
+}

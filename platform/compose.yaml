@@ -14,3 +14,4 @@ services:
       - ../sites/henning:/srv/henning:ro
       - ../sites/maclist:/srv/maclist:ro
       - ../sites/ki-arbeitspartner:/srv/ki-arbeitspartner:ro
+      - ../sites/cadiz:/srv/cadiz:ro

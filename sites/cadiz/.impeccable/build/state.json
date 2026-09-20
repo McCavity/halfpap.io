@@ -1,0 +1,165 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-20T12:48:14.763Z",
+  "comp": ".impeccable/mocks/option-4-synthese.webp",
+  "direction": "a90630a6",
+  "breakpoint": "1376x768",
+  "artifact": null,
+  "phase": "plates",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-09-20T12:48:14.763Z",
+      "closedAt": "2026-09-20T13:28:54.049Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "4 comps, 1 approved",
+        "approved": ".impeccable/mocks/option-4-synthese.webp",
+        "at": "2026-09-20T13:28:54.049Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-20T13:28:54.171Z",
+      "closedAt": "2026-09-20T13:34:38.921Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "18 regions, 10 plates, 8 text regions measured",
+        "at": "2026-09-20T13:34:38.921Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "open",
+      "openedAt": "2026-09-20T13:34:38.921Z",
+      "closedAt": null,
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": false,
+        "reasons": [
+          "plate assets/plates/hero-panorama.png: structure 31% against the comp region hero-panorama: the composition of the plate is not the region's (different subject, orientation, or crop); regenerate with comp-spec.mjs --crop hero-panorama as the reference image",
+          "plate assets/plates/hero-panorama.png: scores 28% against the comp region hero-panorama (structure 31%, color 35%, detail 22%); regenerate with the crop as --ref and the comp-spec plate prompt",
+          "plate assets/plates/stamp.png: structure 40% against the comp region stamp: the composition of the plate is not the region's (different subject, orientation, or crop); regenerate with comp-spec.mjs --crop stamp as the reference image",
+          "plate assets/plates/day1-photo.png: structure 17% against the comp region day1-photo: the composition of the plate is not the region's (different subject, orientation, or crop); regenerate with comp-spec.mjs --crop day1-photo as the reference image",
+          "plate assets/plates/day1-photo.png: scores 27% against the comp region day1-photo (structure 17%, color 27%, detail 28%); regenerate with the crop as --ref and the comp-spec plate prompt",
+          "plate assets/plates/day1-tab.png: scores 34% against the comp region day1-tab (structure 66%, color 76%, detail 5%); regenerate with the crop as --ref and the comp-spec plate prompt",
+          "plate assets/plates/day2-photo.png: structure 24% against the comp region day2-photo: the composition of the plate is not the region's (different subject, orientation, or crop); regenerate with comp-spec.mjs --crop day2-photo as the reference image",
+          "plate assets/plates/day2-photo.png: scores 17% against the comp region day2-photo (structure 24%, color 42%, detail 0%); regenerate with the crop as --ref and the comp-spec plate prompt",
+          "plate assets/plates/day2-tab.png: scores 26% against the comp region day2-tab (structure 60%, color 38%, detail 2%); regenerate with the crop as --ref and the comp-spec plate prompt",
+          "plate assets/plates/day3-photo.png: structure 9% against the comp region day3-photo: the composition of the plate is not the region's (different subject, orientation, or crop); regenerate with comp-spec.mjs --crop day3-photo as the reference image",
+          "plate assets/plates/day3-photo.png: scores 19% against the comp region day3-photo (structure 9%, color 40%, detail 14%); regenerate with the crop as --ref and the comp-spec plate prompt"
+        ],
+        "summary": "10/10 plates",
+        "at": "2026-09-20T14:37:07.928Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "sections": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "motion": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "responsive": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null,
+  "plates": {
+    "album-card": {
+      "status": "ok",
+      "score": 0.5949,
+      "size": "512x288"
+    },
+    "hero-panorama": {
+      "status": "ok",
+      "score": 0.2751,
+      "size": "2400x1339"
+    },
+    "stamp": {
+      "status": "ok",
+      "score": 0.4475,
+      "size": "1024x1024"
+    },
+    "day1-photo": {
+      "status": "ok",
+      "score": 0.2685,
+      "size": "900x900"
+    },
+    "day1-tab": {
+      "status": "ok",
+      "score": 0.3425,
+      "size": "1536x1024"
+    },
+    "day2-photo": {
+      "status": "ok",
+      "score": 0.1725,
+      "size": "900x900"
+    },
+    "day2-tab": {
+      "status": "ok",
+      "score": 0.2568,
+      "size": "1536x1024"
+    },
+    "day3-photo": {
+      "status": "ok",
+      "score": 0.1869,
+      "size": "900x900"
+    },
+    "day3-tab": {
+      "status": "ok",
+      "score": 0.4069,
+      "size": "1536x1024"
+    },
+    "map-badge": {
+      "status": "ok",
+      "score": 0.7311,
+      "size": "1024x1024"
+    }
+  }
+}

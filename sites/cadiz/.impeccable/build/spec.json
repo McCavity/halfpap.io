@@ -1,0 +1,1115 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-20T13:34:17.519Z",
+  "comp": ".impeccable/mocks/option-4-synthese.webp",
+  "warnings": [
+    "region stamp: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region day1-tab: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region day2-tab: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region day3-photo: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region day3-summary: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region day3-tab: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [
+    "J4"
+  ],
+  "compSize": {
+    "width": 1376,
+    "height": 768
+  },
+  "aspect": 1.7917,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#18170b",
+      "coverage": 0.7508
+    },
+    {
+      "hex": "#f2ece7",
+      "coverage": 0.1114
+    },
+    {
+      "hex": "#b6cde0",
+      "coverage": 0.075
+    },
+    {
+      "hex": "#1f6589",
+      "coverage": 0.0377
+    },
+    {
+      "hex": "#b5aea5",
+      "coverage": 0.0251
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.1127,
+      "strength": 0.4947
+    },
+    {
+      "y": 0.1408,
+      "strength": 0.3357
+    },
+    {
+      "y": 0.2958,
+      "strength": 0.3279
+    },
+    {
+      "y": 0.4225,
+      "strength": 0.2057
+    },
+    {
+      "y": 0.493,
+      "strength": 0.3438
+    },
+    {
+      "y": 0.5211,
+      "strength": 0.4548
+    },
+    {
+      "y": 0.6197,
+      "strength": 0.2291
+    },
+    {
+      "y": 0.662,
+      "strength": 0.3467
+    },
+    {
+      "y": 0.7042,
+      "strength": 0.2048
+    },
+    {
+      "y": 0.7324,
+      "strength": 0.2266
+    },
+    {
+      "y": 0.7746,
+      "strength": 0.2311
+    },
+    {
+      "y": 0.8028,
+      "strength": 0.2395
+    },
+    {
+      "y": 0.8873,
+      "strength": 0.2606
+    }
+  ],
+  "regions": [
+    {
+      "id": "album-card",
+      "kind": "texture",
+      "note": "saubere Probe des schwarzen Albumkartons, fibrige Struktur, ohne jede Tinte darauf; die Seite kachelt sie als Grund",
+      "grid": "D5:D5",
+      "box": {
+        "x": 0.3,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 413,
+        "y": 384,
+        "w": 138,
+        "h": 77
+      },
+      "aspect": 1.7922,
+      "palette": [
+        {
+          "hex": "#18180a",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 1.9317
+      },
+      "medium": "raster",
+      "plate": "assets/plates/album-card.png",
+      "text": null
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "note": "Titel 'Cadiz 2026' in Silberstift-Handschrift auf dem schwarzen Karton",
+      "grid": "A1:C1",
+      "coverBox": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0654,
+        "y": 0.1081,
+        "w": 0.2006,
+        "h": 0.0924
+      },
+      "px": {
+        "x": 90,
+        "y": 83,
+        "w": 276,
+        "h": 71
+      },
+      "aspect": 3.8873,
+      "palette": [
+        {
+          "hex": "#17170e",
+          "coverage": 0.8454
+        },
+        {
+          "hex": "#a9a8a3",
+          "coverage": 0.1238
+        },
+        {
+          "hex": "#4e4b44",
+          "coverage": 0.0181
+        },
+        {
+          "hex": "#77746d",
+          "coverage": 0.0118
+        },
+        {
+          "hex": "#382828",
+          "coverage": 0.0009
+        }
+      ],
+      "detail": {
+        "energy": 37.4856
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 8,
+          "capHeightPx": 39,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7692,
+          "advTall": null,
+          "advX": 1.0769,
+          "gap": 0.0769,
+          "xRatio": 0.6969,
+          "stemW": 0.121,
+          "contrast": 1.0745,
+          "serif": null,
+          "densTall": null,
+          "densX": 0.3348,
+          "weight": 0.3348
+        },
+        "widthClass": "wide",
+        "weightClass": "light",
+        "chosen": {
+          "family": "Homemade Apple",
+          "weight": 400,
+          "fontSizePx": 51,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 7,
+            "capHeightPx": 41,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 1.4024,
+            "advTall": null,
+            "advX": 1.4024,
+            "gap": 0.0854,
+            "xRatio": 0.7088,
+            "stemW": 0.1406,
+            "contrast": 1.0087,
+            "serif": 0.915,
+            "densTall": null,
+            "densX": 0.3876,
+            "weight": 0.3876
+          },
+          "stamp": "b13e2d300126"
+        }
+      }
+    },
+    {
+      "id": "subtitle",
+      "kind": "text",
+      "note": "Zeile 'zwei Wochen am Atlantik' in derselben Handschrift, kleiner",
+      "grid": "A2:C2",
+      "coverBox": {
+        "x": 0,
+        "y": 0.2,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.061,
+        "y": 0.2005,
+        "w": 0.218,
+        "h": 0.0547
+      },
+      "px": {
+        "x": 84,
+        "y": 154,
+        "w": 300,
+        "h": 42
+      },
+      "aspect": 7.1429,
+      "palette": [
+        {
+          "hex": "#17170d",
+          "coverage": 0.8507
+        },
+        {
+          "hex": "#b2afaa",
+          "coverage": 0.0679
+        },
+        {
+          "hex": "#5b5953",
+          "coverage": 0.0379
+        },
+        {
+          "hex": "#88867d",
+          "coverage": 0.0314
+        },
+        {
+          "hex": "#373331",
+          "coverage": 0.0121
+        }
+      ],
+      "detail": {
+        "energy": 47.888
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 7,
+          "capHeightPx": 24.5,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 1.3265,
+          "advTall": 3.2653,
+          "advX": null,
+          "gap": 0.102,
+          "xRatio": null,
+          "stemW": 0.0825,
+          "contrast": 0.9783,
+          "serif": null,
+          "densTall": 0.2376,
+          "densX": null,
+          "weight": 0.2376
+        },
+        "widthClass": "wide",
+        "weightClass": "light"
+      }
+    },
+    {
+      "id": "intro-paragraph",
+      "kind": "text",
+      "note": "fuenf Zeilen Einleitungstext in heller Grotesk auf dem schwarzen Karton, linksbuendig",
+      "grid": "A3:C4",
+      "coverBox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.0654,
+        "y": 0.2995,
+        "w": 0.2093,
+        "h": 0.1719
+      },
+      "px": {
+        "x": 90,
+        "y": 230,
+        "w": 288,
+        "h": 132
+      },
+      "aspect": 2.1818,
+      "palette": [
+        {
+          "hex": "#18160c",
+          "coverage": 0.8373
+        },
+        {
+          "hex": "#ece9dd",
+          "coverage": 0.07
+        },
+        {
+          "hex": "#423b33",
+          "coverage": 0.0419
+        },
+        {
+          "hex": "#8d887e",
+          "coverage": 0.0271
+        },
+        {
+          "hex": "#645f56",
+          "coverage": 0.0237
+        }
+      ],
+      "detail": {
+        "energy": 64.7135
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 5,
+          "glyphs": 136,
+          "capHeightPx": 13.6,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5144,
+          "advTall": 0.3492,
+          "advX": 0.5215,
+          "gap": 0.1104,
+          "xRatio": 0.7218,
+          "stemW": 0.1497,
+          "contrast": 1.0247,
+          "serif": 0.5178,
+          "densTall": 0.5212,
+          "densX": 0.575,
+          "weight": 0.5212
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "hero-panorama",
+      "kind": "plate",
+      "note": "Panoramafoto der Landzunge von Cadiz, Meer beidseitig, Strand, ockerfarbene Wohnbloecke, Palmen; leicht gedreht, in vier weissen Papier-Fotoecken; der ockerfarbene Klebestreifen an der Oberkante gehoert zu dieser Platte, er haelt das Foto",
+      "grid": "D0:I5",
+      "box": {
+        "x": 0.3,
+        "y": 0,
+        "w": 0.6,
+        "h": 0.6
+      },
+      "px": {
+        "x": 413,
+        "y": 0,
+        "w": 826,
+        "h": 461
+      },
+      "aspect": 1.7918,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.4723
+        },
+        {
+          "hex": "#b6cddf",
+          "coverage": 0.2277
+        },
+        {
+          "hex": "#206588",
+          "coverage": 0.1199
+        },
+        {
+          "hex": "#f5f2ee",
+          "coverage": 0.1113
+        },
+        {
+          "hex": "#c2a180",
+          "coverage": 0.0688
+        }
+      ],
+      "detail": {
+        "energy": 29.3621
+      },
+      "medium": "raster",
+      "plate": "assets/plates/hero-panorama.png",
+      "text": null
+    },
+    {
+      "id": "stamp",
+      "kind": "plate",
+      "note": "perforierte Briefmarke mit ausgestanztem Zackenrand, darin ein Foto des weissen Strassenschilds 'Cadiz'; gekippt, ueberlappt das Panorama; der runde Ortsstempel 'CADIZ 03.09.2026' in Zinnober gehoert zu dieser Platte, er liegt auf der Marke — bleed: die Marke liegt AUF dem Panorama, keine Box um sie ist frei von dessen Tinte",
+      "grid": "H0:J3",
+      "bleed": true,
+      "box": {
+        "x": 0.7,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.4
+      },
+      "px": {
+        "x": 963,
+        "y": 0,
+        "w": 413,
+        "h": 307
+      },
+      "aspect": 1.3453,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.4877
+        },
+        {
+          "hex": "#b0c8db",
+          "coverage": 0.1848
+        },
+        {
+          "hex": "#226686",
+          "coverage": 0.1525
+        },
+        {
+          "hex": "#f1ece7",
+          "coverage": 0.1274
+        },
+        {
+          "hex": "#999da4",
+          "coverage": 0.0476
+        }
+      ],
+      "detail": {
+        "energy": 23.1944
+      },
+      "medium": "raster",
+      "plate": "assets/plates/stamp.png",
+      "text": null
+    },
+    {
+      "id": "day1-photo",
+      "kind": "plate",
+      "note": "quadratisches Foto der Seemauer von Cadiz in weissen Fotoecken, erste Tageszeile",
+      "grid": "A5:B7",
+      "box": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "px": {
+        "x": 0,
+        "y": 384,
+        "w": 275,
+        "h": 230
+      },
+      "aspect": 1.1957,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.8196
+        },
+        {
+          "hex": "#f2f2f1",
+          "coverage": 0.1134
+        },
+        {
+          "hex": "#bbd1e6",
+          "coverage": 0.0333
+        },
+        {
+          "hex": "#38697a",
+          "coverage": 0.0176
+        },
+        {
+          "hex": "#5d8ba5",
+          "coverage": 0.0162
+        }
+      ],
+      "detail": {
+        "energy": 15.4455
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day1-photo.png",
+      "text": null
+    },
+    {
+      "id": "day1-date",
+      "kind": "text",
+      "note": "Datum '03.09' in Silberstift-Handschrift mit Unterstrich",
+      "grid": "B6:C6",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1003,
+        "y": 0.6003,
+        "w": 0.0654,
+        "h": 0.1003
+      },
+      "px": {
+        "x": 138,
+        "y": 461,
+        "w": 90,
+        "h": 77
+      },
+      "aspect": 1.1688,
+      "palette": [
+        {
+          "hex": "#eef0ef",
+          "coverage": 0.3429
+        },
+        {
+          "hex": "#b5cee6",
+          "coverage": 0.2471
+        },
+        {
+          "hex": "#8bb1da",
+          "coverage": 0.1613
+        },
+        {
+          "hex": "#46768f",
+          "coverage": 0.1244
+        },
+        {
+          "hex": "#19180e",
+          "coverage": 0.1244
+        }
+      ],
+      "detail": {
+        "energy": 11.2629
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-20T13:34:28.163Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "day1-summary",
+      "kind": "text",
+      "note": "zweizeilige Zusammenfassung des Tages in heller Grotesk",
+      "grid": "D6:F6",
+      "coverBox": {
+        "x": 0.3,
+        "y": 0.6,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.3176,
+        "y": 0.6315,
+        "w": 0.2827,
+        "h": 0.069
+      },
+      "px": {
+        "x": 437,
+        "y": 485,
+        "w": 389,
+        "h": 53
+      },
+      "aspect": 7.3396,
+      "palette": [
+        {
+          "hex": "#16150b",
+          "coverage": 0.8037
+        },
+        {
+          "hex": "#eeebe3",
+          "coverage": 0.0673
+        },
+        {
+          "hex": "#817e73",
+          "coverage": 0.0557
+        },
+        {
+          "hex": "#b8b3ab",
+          "coverage": 0.0388
+        },
+        {
+          "hex": "#4d4a3f",
+          "coverage": 0.0345
+        }
+      ],
+      "detail": {
+        "energy": 79.5199
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 89,
+          "capHeightPx": 14.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.4989,
+          "advTall": 0.3132,
+          "advX": 0.5221,
+          "gap": 0.1069,
+          "xRatio": 0.7162,
+          "stemW": 0.1453,
+          "contrast": 0.9995,
+          "serif": null,
+          "densTall": 0.5332,
+          "densX": 0.5695,
+          "weight": 0.5332
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "day1-tab",
+      "kind": "plate",
+      "note": "gerissener Papierreiter mit blauer Kerbe an der rechten Kante, kennzeichnet einen Ausflugstag — bleed: die Reiter liegen 61px auseinander, die Rasterzelle ist 77px hoch",
+      "grid": "G6:H7",
+      "bleed": true,
+      "box": {
+        "x": 0.6,
+        "y": 0.6,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "px": {
+        "x": 826,
+        "y": 461,
+        "w": 275,
+        "h": 154
+      },
+      "aspect": 1.7857,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.7357
+        },
+        {
+          "hex": "#f7ebe9",
+          "coverage": 0.2163
+        },
+        {
+          "hex": "#0b354c",
+          "coverage": 0.0337
+        },
+        {
+          "hex": "#4a4845",
+          "coverage": 0.0112
+        },
+        {
+          "hex": "#081832",
+          "coverage": 0.0032
+        }
+      ],
+      "detail": {
+        "energy": 11.5407
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day1-tab.png",
+      "text": null
+    },
+    {
+      "id": "day2-photo",
+      "kind": "plate",
+      "note": "quadratisches Foto eines Marktstands in weissen Fotoecken, zweite Tageszeile",
+      "grid": "A8:B8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 614,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.7202
+        },
+        {
+          "hex": "#f7f6f5",
+          "coverage": 0.0884
+        },
+        {
+          "hex": "#483d3a",
+          "coverage": 0.0732
+        },
+        {
+          "hex": "#baab9d",
+          "coverage": 0.0622
+        },
+        {
+          "hex": "#87716c",
+          "coverage": 0.056
+        }
+      ],
+      "detail": {
+        "energy": 37.5125
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day2-photo.png",
+      "text": null
+    },
+    {
+      "id": "day2-date",
+      "kind": "text",
+      "note": "Datum '04.09' in Silberstift-Handschrift mit Unterstrich",
+      "grid": "B8:C8",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1003,
+        "y": 0.7995,
+        "w": 0.0654,
+        "h": 0.1003
+      },
+      "px": {
+        "x": 138,
+        "y": 614,
+        "w": 90,
+        "h": 77
+      },
+      "aspect": 1.1688,
+      "palette": [
+        {
+          "hex": "#19190e",
+          "coverage": 0.2262
+        },
+        {
+          "hex": "#f7f6f5",
+          "coverage": 0.2071
+        },
+        {
+          "hex": "#836965",
+          "coverage": 0.1976
+        },
+        {
+          "hex": "#4b4440",
+          "coverage": 0.1857
+        },
+        {
+          "hex": "#b69790",
+          "coverage": 0.1833
+        }
+      ],
+      "detail": {
+        "energy": 27.0528
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-20T13:34:28.212Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "day2-summary",
+      "kind": "text",
+      "note": "zweizeilige Zusammenfassung des Tages in heller Grotesk",
+      "grid": "D8:F8",
+      "coverBox": {
+        "x": 0.3,
+        "y": 0.8,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.3176,
+        "y": 0.8073,
+        "w": 0.2827,
+        "h": 0.0781
+      },
+      "px": {
+        "x": 437,
+        "y": 620,
+        "w": 389,
+        "h": 60
+      },
+      "aspect": 6.4833,
+      "palette": [
+        {
+          "hex": "#17160b",
+          "coverage": 0.848
+        },
+        {
+          "hex": "#e8e4db",
+          "coverage": 0.0843
+        },
+        {
+          "hex": "#b0a9a2",
+          "coverage": 0.0257
+        },
+        {
+          "hex": "#454535",
+          "coverage": 0.0234
+        },
+        {
+          "hex": "#453838",
+          "coverage": 0.0186
+        }
+      ],
+      "detail": {
+        "energy": 67.1303
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 80,
+          "capHeightPx": 13.8,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5175,
+          "advTall": 0.3697,
+          "advX": 0.5358,
+          "gap": 0.1109,
+          "xRatio": 0.7406,
+          "stemW": 0.1483,
+          "contrast": 0.997,
+          "serif": 0.4558,
+          "densTall": 0.5257,
+          "densX": 0.582,
+          "weight": 0.5257
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "day2-tab",
+      "kind": "plate",
+      "note": "gerissener Papierreiter ohne Kerbe, kennzeichnet einen Stadttag — bleed: dito, dichter als die Rasteraufloesung",
+      "grid": "G8:H8",
+      "bleed": true,
+      "box": {
+        "x": 0.6,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 826,
+        "y": 614,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#f8eae9",
+          "coverage": 0.4987
+        },
+        {
+          "hex": "#18170b",
+          "coverage": 0.4836
+        },
+        {
+          "hex": "#8d8d87",
+          "coverage": 0.013
+        },
+        {
+          "hex": "#c3c3b8",
+          "coverage": 0.0025
+        },
+        {
+          "hex": "#382e2e",
+          "coverage": 0.0021
+        }
+      ],
+      "detail": {
+        "energy": 13.4412
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day2-tab.png",
+      "text": null
+    },
+    {
+      "id": "day3-photo",
+      "kind": "plate",
+      "note": "quadratisches Foto in weissen Fotoecken, dritte Tageszeile, vom unteren Rand angeschnitten",
+      "grid": "A9:B9",
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 691,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#18180c",
+          "coverage": 0.7038
+        },
+        {
+          "hex": "#f4f2f0",
+          "coverage": 0.1547
+        },
+        {
+          "hex": "#96bee0",
+          "coverage": 0.1138
+        },
+        {
+          "hex": "#a9a0a1",
+          "coverage": 0.0145
+        },
+        {
+          "hex": "#655f5b",
+          "coverage": 0.0132
+        }
+      ],
+      "detail": {
+        "energy": 17.6488
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day3-photo.png",
+      "text": null
+    },
+    {
+      "id": "day3-summary",
+      "kind": "text",
+      "note": "angeschnittene Textzeile der dritten Tageszeile",
+      "grid": "D9:F9",
+      "bleed": true,
+      "coverBox": {
+        "x": 0.3,
+        "y": 0.9,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.5531,
+        "y": 0.9857,
+        "w": 0.0262,
+        "h": 0.0143
+      },
+      "px": {
+        "x": 761,
+        "y": 757,
+        "w": 36,
+        "h": 11
+      },
+      "aspect": 3.2727,
+      "palette": [
+        {
+          "hex": "#181709",
+          "coverage": 0.9792
+        },
+        {
+          "hex": "#787878",
+          "coverage": 0.0208
+        }
+      ],
+      "detail": {
+        "energy": 2.0394
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-20T13:34:28.496Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "day3-tab",
+      "kind": "plate",
+      "note": "gerissener Papierreiter der dritten Tageszeile, vom unteren Rand angeschnitten",
+      "grid": "G9:H9",
+      "bleed": true,
+      "box": {
+        "x": 0.6,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 826,
+        "y": 691,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#18180b",
+          "coverage": 0.8728
+        },
+        {
+          "hex": "#f7e9e8",
+          "coverage": 0.1251
+        },
+        {
+          "hex": "#928888",
+          "coverage": 0.0021
+        }
+      ],
+      "detail": {
+        "energy": 8.3359
+      },
+      "medium": "raster",
+      "plate": "assets/plates/day3-tab.png",
+      "text": null
+    },
+    {
+      "id": "map-badge",
+      "kind": "plate",
+      "note": "zusammengefaltete Papierkarte mit Tinten-Kuestenlinie und Routenlinie, mit zwei Streifen Klebeband in der Ecke befestigt; das dauerhaft sichtbare Bedienelement, ausdruecklich kein digitaler Kartendienst",
+      "grid": "I7:J9",
+      "box": {
+        "x": 0.8,
+        "y": 0.7,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "px": {
+        "x": 1101,
+        "y": 538,
+        "w": 275,
+        "h": 230
+      },
+      "aspect": 1.1957,
+      "palette": [
+        {
+          "hex": "#17170b",
+          "coverage": 0.5815
+        },
+        {
+          "hex": "#e8e2d8",
+          "coverage": 0.3585
+        },
+        {
+          "hex": "#ba9158",
+          "coverage": 0.0335
+        },
+        {
+          "hex": "#d0baaf",
+          "coverage": 0.0135
+        },
+        {
+          "hex": "#525147",
+          "coverage": 0.0129
+        }
+      ],
+      "detail": {
+        "energy": 19.5173
+      },
+      "medium": "raster",
+      "plate": "assets/plates/map-badge.png",
+      "text": null
+    }
+  ]
+}

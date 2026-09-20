@@ -1,0 +1,12 @@
+{
+  "prompt": "Aspect ratio 16:9, landscape. Desktop WEBSITE DESIGN MOCKUP, a screen design, not a photograph.\nGROUND: dark warm-black photo-album card page #14120F, fibrous heavy black album stock.\nDOMINANT (~68% width, most of the height, centred): a folded paper road map of the Andalusian Atlantic coast, taped onto the black album page. Printed in muted period colours — pale land, blue water, thin red roads — fold creases visible as soft ridges catching light. Held by four strips of pale ochre washi tape #C98A3E at its corners. A hand-drawn route line in muted vermillion #C6362C connects the places as if drawn with a fine pen: from an airport in the northeast down to a coastal city, east to a rock at the strait, back up to an inland town, north across a bay, and back.\nPINNED TO THE MAP at six points: small stamp-sized square photographs, each held by a tiny white paper photo corner, tilted slightly — a beach, a tall sailing ship, a rock rising from the sea, a sherry cellar, a white cathedral dome, a ferry. Beside each a small handwritten place name and date in silver pencil on the map: \"Cadiz 03.09\", \"Gibraltar 07.09\", \"Jerez 08.09\", \"Rota 10.09\", \"El Puerto 15.09\".\nUPPER LEFT on the black card beside the map: title \"Cadiz 2026\" in silver pencil, smaller line \"zwei Wochen am Atlantik\", then three short lines of small clean sans-serif body text in warm off-white.\nLOWER EDGE, narrow band across the full width on the black card below the map: fourteen small torn-edge paper tabs #F2F0EB in a row with handwritten dates. Four carry a small deep-blue #0F3B57 notch. One is visibly empty.\nCOMMITMENT: the dominant move is the TAPED-DOWN MAP with its drawn route — geography leads, days run along the bottom as a secondary spine. This tests whether place or time should be the way in.\nPALETTE: #14120F, #0F3B57, #C98A3E, #C6362C, #F2F0EB.\nAVOID: serif display typography, centred hero text over full-bleed photo, rounded-corner card grids, gradient overlays, glassmorphism, neon, modern digital map tiles like Google Maps or Mapbox.",
+  "approved": false,
+  "surface": "sites/cadiz/index.html",
+  "seed_key": "a90630a6",
+  "direction": "Das Reisealbum",
+  "structural_question": "Aufgeklebte Faltkarte mit gezeichneter Route, Fotos an den Orten angesteckt. Geographie fuehrt, Tage laufen als Leiste unten.",
+  "generator": "nanobanana-render MCP (Google Gemini)",
+  "model": "gemini-3-pro-image",
+  "generated": "2026-09-20",
+  "frame": "1376x768, desktop landscape"
+}

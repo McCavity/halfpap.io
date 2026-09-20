@@ -1,0 +1,11 @@
+{
+  "prompt": "Use the provided photograph as the visual reference and extract ONLY the fridge magnet from it, as a clean production asset with a genuinely transparent background.\n\nThe object: a moulded souvenir fridge magnet shaped like the Rock of Gibraltar. The grey limestone rock rises steeply on the right, with green vegetation on its slopes. Along the base sit four Barbary macaques in a row, modelled in relief: the first covers its eyes, the second covers its ears, the third covers its mouth — and the fourth, breaking the tradition, stares at a smartphone in its hands. Across the base, in raised red capitals, the word \"GIBRALTAR\", with a small Union Jack flag at the right end. The magnet has the soft irregular outline of a moulded object, not a rectangle.\n\nRemove completely: the metal fridge surface behind it, any shadow cast onto that surface, and every trace of the room. Nothing of the background may remain, not at the edges, not between the monkeys, not under the rock's overhang.\n\nPreserve exactly: the magnet's own silhouette including the rock's jagged profile, the relief depth and its own shading, the fur texture of the four macaques and each one's distinct pose, the raised red lettering, and the painted colours as photographed. Do not redraw, do not restyle, do not smooth the relief into a flat illustration, do not enlarge it to fill the frame.\n\nCut the background to genuine transparent alpha, including the gaps between the monkeys' arms and bodies. Keep the magnet itself fully opaque; retain partial alpha only at genuinely soft edges. No chroma background, no baked-in checkerboard, no matte. Output a transparent PNG cutout.\n",
+  "createdAt": "2026-09-20T15:29:41.530Z",
+  "tool": "impeccable generate-image",
+  "model": "gpt-image-2.5-flare",
+  "background": "transparent",
+  "outputFormat": "png",
+  "refs": [
+    ".impeccable/build/crops/magnet-gibraltar.png"
+  ]
+}

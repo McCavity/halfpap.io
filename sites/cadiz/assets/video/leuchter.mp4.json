@@ -1,0 +1,5 @@
+{
+  "origin": "Eigene Aufnahme, Photos.app, Album Urlaub/2026/Cádiz/Reiseblog — IMG_8989.MOV, aufgenommen 2026-09-16 21:04",
+  "processing": "HEVC 10 bit 3840x2160/60fps -> H.264 8 bit 1280x720/30fps (ffmpeg, CRF 27, preset slow, faststart), 105 MB -> 1,5 MB. TONSPUR ENTFERNT (-an): im Restaurant aufgenommen, die Originaltonspur enthaelt Stimmen anderer Gaeste. Farbwiedergabe nach der HDR->SDR-Wandlung im Einzelbildvergleich geprueft.",
+  "note": "Kein generiertes Material. Urheber: Henning Halfpap. Im Bild sind keine Personen — die Kamera zeigt nach oben an die Decke."
+}

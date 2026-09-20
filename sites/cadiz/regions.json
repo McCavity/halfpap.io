@@ -1,0 +1,118 @@
+{
+  "regions": [
+    {
+      "id": "album-card",
+      "kind": "texture",
+      "grid": "D5:D5",
+      "note": "saubere Probe des schwarzen Albumkartons, fibrige Struktur, ohne jede Tinte darauf; die Seite kachelt sie als Grund"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "grid": "A1:C1",
+      "note": "Titel 'Cadiz 2026' in Silberstift-Handschrift auf dem schwarzen Karton"
+    },
+    {
+      "id": "subtitle",
+      "kind": "text",
+      "grid": "A2:C2",
+      "note": "Zeile 'zwei Wochen am Atlantik' in derselben Handschrift, kleiner"
+    },
+    {
+      "id": "intro-paragraph",
+      "kind": "text",
+      "grid": "A3:C4",
+      "note": "fuenf Zeilen Einleitungstext in heller Grotesk auf dem schwarzen Karton, linksbuendig"
+    },
+    {
+      "id": "hero-panorama",
+      "kind": "plate",
+      "grid": "D0:I5",
+      "note": "Panoramafoto der Landzunge von Cadiz, Meer beidseitig, Strand, ockerfarbene Wohnbloecke, Palmen; leicht gedreht, in vier weissen Papier-Fotoecken; der ockerfarbene Klebestreifen an der Oberkante gehoert zu dieser Platte, er haelt das Foto"
+    },
+    {
+      "id": "stamp",
+      "kind": "plate",
+      "grid": "H0:J3",
+      "note": "perforierte Briefmarke mit ausgestanztem Zackenrand, darin ein Foto des weissen Strassenschilds 'Cadiz'; gekippt, ueberlappt das Panorama; der runde Ortsstempel 'CADIZ 03.09.2026' in Zinnober gehoert zu dieser Platte, er liegt auf der Marke — bleed: die Marke liegt AUF dem Panorama, keine Box um sie ist frei von dessen Tinte",
+      "bleed": true
+    },
+    {
+      "id": "day1-photo",
+      "kind": "plate",
+      "grid": "A5:B7",
+      "note": "quadratisches Foto der Seemauer von Cadiz in weissen Fotoecken, erste Tageszeile"
+    },
+    {
+      "id": "day1-date",
+      "kind": "text",
+      "grid": "B6:C6",
+      "note": "Datum '03.09' in Silberstift-Handschrift mit Unterstrich"
+    },
+    {
+      "id": "day1-summary",
+      "kind": "text",
+      "grid": "D6:F6",
+      "note": "zweizeilige Zusammenfassung des Tages in heller Grotesk"
+    },
+    {
+      "id": "day1-tab",
+      "kind": "plate",
+      "grid": "G6:H7",
+      "note": "gerissener Papierreiter mit blauer Kerbe an der rechten Kante, kennzeichnet einen Ausflugstag — bleed: die Reiter liegen 61px auseinander, die Rasterzelle ist 77px hoch",
+      "bleed": true
+    },
+    {
+      "id": "day2-photo",
+      "kind": "plate",
+      "grid": "A8:B8",
+      "note": "quadratisches Foto eines Marktstands in weissen Fotoecken, zweite Tageszeile"
+    },
+    {
+      "id": "day2-date",
+      "kind": "text",
+      "grid": "B8:C8",
+      "note": "Datum '04.09' in Silberstift-Handschrift mit Unterstrich"
+    },
+    {
+      "id": "day2-summary",
+      "kind": "text",
+      "grid": "D8:F8",
+      "note": "zweizeilige Zusammenfassung des Tages in heller Grotesk"
+    },
+    {
+      "id": "day2-tab",
+      "kind": "plate",
+      "grid": "G8:H8",
+      "note": "gerissener Papierreiter ohne Kerbe, kennzeichnet einen Stadttag — bleed: dito, dichter als die Rasteraufloesung",
+      "bleed": true
+    },
+    {
+      "id": "day3-photo",
+      "kind": "plate",
+      "grid": "A9:B9",
+      "note": "quadratisches Foto in weissen Fotoecken, dritte Tageszeile, vom unteren Rand angeschnitten",
+      "bleed": true
+    },
+    {
+      "id": "day3-summary",
+      "kind": "text",
+      "grid": "D9:F9",
+      "note": "angeschnittene Textzeile der dritten Tageszeile",
+      "bleed": true
+    },
+    {
+      "id": "day3-tab",
+      "kind": "plate",
+      "grid": "G9:H9",
+      "note": "gerissener Papierreiter der dritten Tageszeile, vom unteren Rand angeschnitten",
+      "bleed": true
+    },
+    {
+      "id": "map-badge",
+      "kind": "plate",
+      "grid": "I7:J9",
+      "note": "zusammengefaltete Papierkarte mit Tinten-Kuestenlinie und Routenlinie, mit zwei Streifen Klebeband in der Ecke befestigt; das dauerhaft sichtbare Bedienelement, ausdruecklich kein digitaler Kartendienst"
+    }
+  ]
+}

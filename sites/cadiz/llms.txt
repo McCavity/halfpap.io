@@ -1,0 +1,33 @@
+# Cádiz 2026 — zwei Wochen am Atlantik
+
+> Ein Reiseblog über zwei Wochen in Cádiz (3.–17. September 2026), geschrieben
+> von Henning Halfpap. Die Texte entstanden abends während der Reise, nicht im
+> Rückblick; die Fotos sind eigene Aufnahmen.
+
+## Worum es geht
+
+Cádiz liegt auf einer schmalen Landzunge im Atlantik. Zwei Winde bestimmen das
+Klima: der Levante aus Osten, trocken und warm, und der Poniente aus Westen,
+feucht und kühl. Der Unterschied ist messbar — an den letzten beiden Reisetagen
+drehte der Wind, und aus über 30 Grad wurden gut 20.
+
+## Aufbau
+
+Die Startseite führt chronologisch durch fünfzehn Tage. Jeder Tag trägt ein
+Datum, eine kurze Zusammenfassung und eine Markierung, ob es ein Ausflugstag
+war. Eine aufklappbare Karte verbindet die fünf besuchten Orte mit ihren Tagen.
+
+## Die Orte
+
+- Cádiz — Basis der Reise, ab 3. September
+- Gibraltar — Tagesausflug am 7. September
+- Jerez de la Frontera — 8. September
+- Rota — 10. September
+- El Puerto de Santa María — 15. September
+
+## Hinweise
+
+- Der 14. September trägt keinen eigenen Reisebericht: an diesem Tag geschah
+  bewusst nichts. Erzählt wird er im Eintrag des Folgetags.
+- Impressum und Datenschutzerklärung liegen kanonisch unter
+  https://www.halfpap.io/impressum/ und https://www.halfpap.io/datenschutz/

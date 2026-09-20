@@ -1,0 +1,11 @@
+{
+  "prompt": "Use the provided crop as the visual reference, but extract ONLY the postage stamp from it.\n\nThe crop shows a perforated postage stamp lying on top of a panoramic photograph. The photograph is NOT part of this asset — it is the page behind the stamp. Output the stamp alone.\n\nThe asset: one perforated postage stamp, tilted about 6 degrees, with a clearly visible scalloped die-cut edge all the way around. Inside the stamp frame is a small photograph of a white street sign reading \"Cádiz\" against a building wall. Across the stamp's lower left sits a circular postmark ring in muted vermillion, containing the text \"CÁDIZ · 03.09.2026\" following the ring's curve. The stamp casts a soft, short, honest drop shadow as a small piece of paper resting on a surface would.\n\nRemove completely: the panoramic landscape photograph, its white border and photo corners, any part of the page ground, and every trace of the surrounding layout. Nothing of the background scene may remain — not at the edges, not behind the stamp, not as a fragment.\n\nPreserve the stamp's own silhouette, its perforated edge with every tooth intact, the palette, and the paper texture exactly as the reference shows them. Do not add objects, do not restyle, do not enlarge the stamp to fill the frame — keep its proportions and clear margins around it.\n\nRemove the page ground and the gaps between the perforation teeth to genuine transparent alpha. Keep the stamp's paper opaque, preserve the fine scalloped edges, and retain partial alpha only for the drop shadow. No chroma background, no baked-in checkerboard, no matte. Output a transparent PNG cutout.\n",
+  "createdAt": "2026-09-20T14:22:25.502Z",
+  "tool": "impeccable generate-image",
+  "model": "gpt-image-2.5-flare",
+  "background": "transparent",
+  "outputFormat": "png",
+  "refs": [
+    ".impeccable/build/crops/stamp.png"
+  ]
+}
