@@ -97,8 +97,10 @@ selten überarbeitet.
   Damit bekommt der **14.09.** ein vollwertiges Kapitel statt einer Leerstelle: er ist im
   Beitrag vom 15.09. erzählt und fotografisch mit dreizehn Aufnahmen belegt.
 
-- ❗ **Offen:** Ob der Blog als Arbeitsprobe gilt und von der Visitenkarte verlinkt wird.
-  Später zu entscheiden, wenn die Seite steht.
+- ✅ **Entschieden (Henning 20.09.): Der Blog ist keine Arbeitsprobe** und wird nicht von der
+  Visitenkarte verlinkt. Begründung: Henning ist System Engineer, nicht Designer oder Content
+  Creator — im Portfolio stünde die Seite für eine Rolle, die er nicht sucht. Den Link gibt er
+  bei Bedarf selbst weiter. Das deckt sich mit „mehr sein als scheinen".
 - ❗ **Offen:** Ob der Dach-Slogan „Made with AI. Made for humans and agents alike." auf dieser
   Site erscheint. Nicht einfach übernehmen.
 
