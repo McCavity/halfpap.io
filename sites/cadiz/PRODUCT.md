@@ -151,8 +151,10 @@ Erlebten heraus entwickelt — nie davorgestellt.
 **Nicht vorhanden — und nicht zu erfinden:**
 
 - Keine Besucherzahlen, keine Reichweitendaten, keine Testimonials, keine Presse.
-- ⚠️ Die **9.500 Kreuzfahrtgäste an einem Tag** sind Hennings Eindruck vor Ort, **keine belegte
-  Zahl**. Vor Veröffentlichung gegen die Hafenstatistik prüfen oder weicher formulieren.
+- ✅ **Die 9.500 Kreuzfahrtgäste sind belegt** (Henning 20.09.): Portal de Cádiz meldete am
+  4. September 2026 „Más de 9.500 cruceristas" an Bord der drei genannten Schiffe — Norwegian
+  Dawn, MSC Opera, Liberty of the Seas. An der Quelle geprüft; Datum, Zahl und alle drei
+  Schiffsnamen stimmen überein. Die Zahl steht mit Quellenlink im Kapitel des 04.09.
 - ⚠️ **Keine harte Jahreszahl zur Stadtgründung** ohne Beleg. „Rund dreitausend Jahre" trägt
   beide gängigen Datierungen (traditionell 1104 v. Chr., archäologisch 9./8. Jh. v. Chr.).
 - Die Facebook-Medien sind **nicht** die Bildquelle: komprimiert und eine Teilmenge. Bilder
