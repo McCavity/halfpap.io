@@ -77,12 +77,26 @@ selten überarbeitet.
 
 **Inhalt**
 
-- **14 Kapitel** (03.–17.09.), bei Umsortierung nach Erlebnistag **15**.
-- ❗ **Offen und bewußt nicht entschieden:** Ein Beitrag entspricht nicht einem Tag. Zehn der
-  vierzehn Beiträge greifen auf den Vorabend zurück, weil abends geschrieben wurde
-  (18:33–23:00). Die Struktur lautet tatsächlich *Beitrag Tag N = Abend Tag N−1 + Tag N*.
-  Ob 1:1 übernommen oder nach Erlebnistag umsortiert wird, entscheidet sich in der
-  Design-Phase, an einem konkreten Kapitel erprobt, zusammen mit der Bildzuordnung.
+- **15 Kapitel** (03.–17.09.), eines je Erlebnistag.
+- ⭐ **Entschieden (Henning 20.09.): Die Kapitel erzählen den Erlebnistag, nicht den
+  Schreibtag.** Zehn der vierzehn Facebook-Beiträge greifen auf den Vorabend zurück, weil
+  abends geschrieben wurde. Der Blog zieht das gerade: jedes Kapitel erzählt, was an diesem
+  Tag geschah, unabhängig davon, wann es aufgeschrieben wurde.
+
+  **Die Begründung ist redaktionell und trägt weiter als die Frage:** Facebook war das
+  Tagebuch, das zeitnah festhielt — der Blog ist die kuratierte zweite Ansicht derselben
+  Reise, mit Abstand statt aus dem Moment. Daraus folgen drei Freiheiten: nicht jedes Detail
+  der Beiträge muß verdoppelt werden; Details, die damals nicht in einen Beitrag paßten,
+  dürfen nachgepflegt werden; und die Erzählung darf ordnen, was das Tagebuch in der
+  Reihenfolge des Schreibens hinterließ.
+
+  ⚠️ **Was dabei unantastbar bleibt:** die Stimme und die belegten Fakten. Kuratieren heißt
+  auswählen und ordnen, nicht ausschmücken. Ein Detail, das in keiner Quelle steht, kommt
+  auch nicht in ein Kapitel.
+
+  Damit bekommt der **14.09.** ein vollwertiges Kapitel statt einer Leerstelle: er ist im
+  Beitrag vom 15.09. erzählt und fotografisch mit dreizehn Aufnahmen belegt.
+
 - ❗ **Offen:** Ob der Blog als Arbeitsprobe gilt und von der Visitenkarte verlinkt wird.
   Später zu entscheiden, wenn die Seite steht.
 - ❗ **Offen:** Ob der Dach-Slogan „Made with AI. Made for humans and agents alike." auf dieser

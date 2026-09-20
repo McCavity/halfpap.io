@@ -34,9 +34,10 @@ Constraints: rein statisch, kein Server, kein Key-Gate. CSP der Plattform verbie
 und -Skripte sowie externe Ressourcen. Bildunterschrift und ALT je Bild. `prefers-reduced-motion`
 muß die Seite vollständig benutzbar lassen.
 
-Unresolved: Kapitelschnitt — Beiträge 1:1 übernehmen oder nach Erlebnistag umsortieren. Zehn der
-vierzehn Beiträge greifen auf den Vorabend zurück. Der 14.09. hat keinen Beitrag, aber dreizehn
-Fotos. Zusammen mit der Bildzuordnung an einem konkreten Kapitel zu erproben.
+Entschieden (Henning 20.09.): Die Kapitel erzählen den Erlebnistag, nicht den Schreibtag.
+Facebook war das Tagebuch aus dem Moment, der Blog ist die kuratierte zweite Ansicht mit
+Abstand — er darf ordnen, weglassen und nachpflegen, aber nie ausschmücken. Stimme und
+belegte Fakten bleiben unantastbar. Der 14.09. bekommt dadurch ein volles Kapitel.
 
 ## Direction contract
 
