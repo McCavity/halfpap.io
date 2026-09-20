@@ -1,0 +1,12 @@
+{
+  "card": "challenger-passport",
+  "surface": "sites/cadiz/index.html — Startseite",
+  "round": "direction decision",
+  "seed_key": "a90630a6",
+  "generator": "nanobanana-render MCP (Google Gemini)",
+  "model": "gemini-3-pro-image",
+  "generated": "2026-09-20",
+  "frame": "1376x768, desktop landscape",
+  "discipline": "structure-led prompt per reference/visualize.md — regions named in order of scale, real product name and content, no invented commercial claims",
+  "note": "Decision-round comp. Carries no approval. Prompt text preserved in the session record and in the git history of this commit."
+}

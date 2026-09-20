@@ -1,0 +1,96 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-20T12:48:14.763Z",
+  "comp": ".impeccable/mocks/option-4-synthese.webp",
+  "direction": "a90630a6",
+  "breakpoint": "1376x768",
+  "artifact": null,
+  "phase": "plates",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-09-20T12:48:14.763Z",
+      "closedAt": "2026-09-20T13:28:54.049Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "4 comps, 1 approved",
+        "approved": ".impeccable/mocks/option-4-synthese.webp",
+        "at": "2026-09-20T13:28:54.049Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-20T13:28:54.171Z",
+      "closedAt": "2026-09-20T13:34:38.921Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "18 regions, 10 plates, 8 text regions measured",
+        "at": "2026-09-20T13:34:38.921Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "open",
+      "openedAt": "2026-09-20T13:34:38.921Z",
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "hero": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "sections": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "motion": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "responsive": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null
+}

@@ -1,0 +1,12 @@
+{
+  "prompt": "Aspect ratio 16:9, landscape. Desktop WEBSITE DESIGN MOCKUP, a screen design, not a photograph.\nGROUND: dark warm-black photo-album card page #14120F, fibrous heavy black album stock. Never cream, parchment or sepia.\nDOMINANT (~62% width, centred slightly left, middle band): one wide panoramic photograph of a narrow Atlantic peninsula city — sea both sides, long sandy beach curving away, pale ochre apartment blocks, palm trees, deep blue Atlantic. Held by four small white paper photo corners, rotated ~1.5 degrees. One strip of pale ochre washi tape #C98A3E across its top edge.\nOVERLAP upper right: perforated postage stamp, scalloped die-cut edge visible against the black ground, tilted ~6 degrees, containing a small photo of a white street sign reading \"Cadiz\", with a circular postmark ring in muted vermillion #C6362C reading \"CADIZ · 03.09.2026\".\nRIGHT COLUMN (~16% width, full height): fourteen small horizontal index tabs stacked vertically, torn-edge strips of off-white paper #F2F0EB with handwritten dates in graphite. Four carry a small deep-blue #0F3B57 notch on the left edge. One tab is visibly, deliberately empty.\nUPPER LEFT: title \"Cadiz 2026\" handwritten in silver pencil on the black card, smaller line beneath reading \"zwei Wochen am Atlantik\".\nLOWER LEFT: three short lines of small body text in clean sans-serif, warm off-white, left-aligned.\nCOMMITMENT: one dominant move — the panoramic photograph in white corners on black album card. Everything else holds still.\nPALETTE: #14120F, #0F3B57, #C98A3E, #C6362C, #F2F0EB.\nAVOID: serif display typography, centred hero text over full-bleed photo, rounded-corner card grids, gradient overlays, glassmorphism, neon, drop shadows beyond what a photo corner casts.",
+  "approved": false,
+  "surface": "sites/cadiz/index.html",
+  "seed_key": "a90630a6",
+  "direction": "Das Reisealbum",
+  "structural_question": "Panorama in Fotoecken; Zeit fuehrt ueber den Reiterstapel rechts. Entscheidungs-Comp der gewaehlten Richtung, unveraendert uebernommen.",
+  "generator": "nanobanana-render MCP (Google Gemini)",
+  "model": "gemini-3-pro-image",
+  "generated": "2026-09-20",
+  "frame": "1376x768, desktop landscape"
+}

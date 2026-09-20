@@ -1,0 +1,12 @@
+{
+  "prompt": "Aspect ratio 16:9, landscape. Desktop WEBSITE DESIGN MOCKUP, a screen design, not a photograph.\nGROUND: dark warm-black photo-album card page #14120F, fibrous heavy black album stock, faint vertical binding gutter down the centre — an opened double page.\nDOMINANT, spanning almost the whole frame: NOT one big photograph but NINE photographs of different sizes scattered across both halves, overlapping slightly, each held by white paper photo corners, each rotated a degree or two differently. They show a narrow Atlantic peninsula city, a tall sailing ship at a quay, a white cathedral dome, a sherry cellar with dark barrels, a beach at evening, narrow white streets, a rock rising from the sea, a fish market, a ferry deck. Two large anchor the halves, three medium, four small. Black card shows through between them as breathing room.\nMARGINALIA in silver pencil in the gaps: \"03.09 Ankunft\", \"07.09 Gibraltar\", \"10.09 Rota\", \"15.09 El Puerto\", angled naturally as handwriting.\nTWO STRIPS of pale ochre washi tape #C98A3E hold two photographs onto the black ground.\nUPPER LEFT: title \"Cadiz 2026\" in silver pencil, smaller line \"zwei Wochen am Atlantik\".\nLOWER EDGE, narrow band: fourteen small torn-edge paper tabs #F2F0EB left to right, each with a handwritten date. Four carry a small deep-blue #0F3B57 notch. One is visibly empty.\nCOMMITMENT: the dominant move is DENSITY — a whole spread of accumulated photographs, as a real album page looks with two weeks laid out at once. No single image dominates; the accumulation is the point.\nPALETTE: #14120F, #0F3B57, #C98A3E, #C6362C, #F2F0EB.\nAVOID: serif display typography, centred hero text over full-bleed photo, rounded-corner card grids, gradient overlays, glassmorphism, neon, drop shadows beyond what a photo corner casts.",
+  "approved": false,
+  "surface": "sites/cadiz/index.html",
+  "seed_key": "a90630a6",
+  "direction": "Das Reisealbum",
+  "structural_question": "Aufgeschlagene Doppelseite mit neun Fotos verschiedener Groesse. Dichte statt Fokus: die Anhaeufung ist das Argument.",
+  "generator": "nanobanana-render MCP (Google Gemini)",
+  "model": "gemini-3-pro-image",
+  "generated": "2026-09-20",
+  "frame": "1376x768, desktop landscape"
+}

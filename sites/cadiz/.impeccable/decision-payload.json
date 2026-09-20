@@ -1,0 +1,174 @@
+{
+  "title": "Die visuelle Welt wählen",
+  "question": "Der Wurf hat „Das Reisealbum“ zugewiesen — die Welt, aus der auch Dein SCRL-Karussell stammt. Behalten, eine Alternative nehmen oder neu würfeln.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Das Reisealbum",
+      "kicker": "THE ROLL",
+      "lineage": "Deutsches Fotoalbum auf schwarzem Karton, Briefmarke, Fotoecke, Klebeband",
+      "thesis": "Eine Chronik, die aus Dingen besteht statt aus Feldern. Sie verweigert das, was jeder Reiseblog liefert: das Vollbild-Foto mit dünner Serifenschrift darüber und dem Kachelraster darunter.",
+      "palette": [
+        "#14120F",
+        "#0F3B57",
+        "#C98A3E",
+        "#C6362C",
+        "#F2F0EB"
+      ],
+      "materials": [
+        "schwarzer Albumkarton",
+        "Briefmarkenperforation",
+        "weiße Fotoecken",
+        "Washi-Tape",
+        "Silberstift"
+      ],
+      "viewport": "Eine aufgeschlagene schwarze Doppelseite. Das Panorama der Landzunge zieht über den Bund, in Fotoecken gesteckt. Darüber, leicht schief, eine perforierte Briefmarke mit dem Ortsstempel CÁDIZ. Am rechten Rand stehen die vierzehn Tage als beschriftete Reiter — der leere 14.09. als leerer Reiter, der trotzdem da ist.",
+      "risk": "Sammelalbum ist ein abgenutztes Web-Motiv und kippt schnell ins Kitschige. Und es ist die wörtliche Lesart des eigenen Vorschlags — genau die Richtung, auf die man von selbst kommt. Trägt nur, wenn das Raster darunter streng bleibt.",
+      "raised": [
+        {
+          "from": "Rennstall-Lackierung",
+          "raise": "Ein Material trägt die ganze Seite, statt daß die Collage aus beliebigen Teilen besteht. Der schwarze Karton ist das Identitätssystem und liest sich vor jedem Wort."
+        },
+        {
+          "from": "Versailles",
+          "raise": "Der Scroll ist eine choreographierte Abfolge vom Überblick zur einzelnen Kammer, kein Haufen nebeneinander."
+        },
+        {
+          "from": "Wolkensteinbruch",
+          "raise": "Levante und Poniente werden greifbares Material statt einer Erwähnung im Text — der Wind bekommt eine Form auf der Seite."
+        },
+        {
+          "from": "Sieben-Segment-Anzeige",
+          "raise": "Die Leerstelle wird so bewußt gestaltet wie das Volle. Der 14.09., an dem nichts geschah, bekommt eine Form — er wird nicht übersprungen."
+        },
+        {
+          "from": "Normalled Jackfield",
+          "raise": "Zustände werden über Form kodiert, nie allein über Farbe: Ausflugstag gegen Stadttag, gelesen gegen ungelesen, unterscheiden sich an der Kante, nicht am Farbton."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp",
+      "board": "https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Der Fliesenspiegel",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Andalusische Azulejos — Kobalt auf Zinnweiß, Rapport als Struktur",
+      "thesis": "Die Stadt selbst ist die Form. Vierzehn Tage als vierzehn Fliesen in einer Wand, die nach jeder Seite weitergeht.",
+      "palette": [
+        "#1B4E8C",
+        "#F4F1E8",
+        "#5B3A6E",
+        "#C9873A"
+      ],
+      "materials": [
+        "glasierte Keramik",
+        "Zinnglasur",
+        "Handmalerei",
+        "Fugenmörtel"
+      ],
+      "viewport": "Eine Fliesenwand füllt den Blick. Vierzehn Felder tragen je ein Foto unter der Glasur; das Ornament dazwischen ist nicht Dekor, sondern das Raster. Der Titel steht als gemaltes Keramik-Straßenschild darin, wie sie in Cádiz an den Hauswänden hängen.",
+      "risk": "Ehrlich: Das ist meine eigene erste Wahl — und genau deshalb die Richtung, auf die vermutlich jeder Lauf für ein Spanien-Thema kommt. Vertraut und wirksam, aber vorhersehbar.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-passport",
+      "label": "Der abgestempelte Paß",
+      "verdict": "competitive",
+      "lineage": "Vielbereister Reisepaß — Visastempel, Guillochendruck, OCR-B-Datenzeile",
+      "thesis": "Das Dokument ist zugleich Identität und Geschichte. Jeder Tag ein Stempel, jede Grenze eine Seite.",
+      "palette": [
+        "#6B1F2A",
+        "#B8935A",
+        "#E8D5D2",
+        "#D4E0D2",
+        "#1A1A1A"
+      ],
+      "materials": [
+        "Burgunder-Leinen",
+        "Goldprägung",
+        "Sicherheitspapier",
+        "Stempelfarbe"
+      ],
+      "viewport": "Die aufgeschlagene Datenseite, Guillochen in Rosé und Blaßgrün, darüber die Stempel schief und übereinander: FRA, JEREZ, GIBRALTAR. Die OCR-B-Zeile trägt die Zahlen, die ohnehin die Signatur sind — 04:41, 05:00:05, 2:34.",
+      "case": "Fusioniert stark: Gibraltar war eine echte Grenze, Sassis erster Besuch in Großbritannien. Die chronologisch sich füllenden Seiten sind exakt vierzehn Kapitel, und die Maschinenzeile trägt die sekundengenauen Zahlen besser als jede andere Form. Hält die Produktklarheit — verliert daran, daß Stempelfelder klein sind: 1.534 Fotos passen nicht in ein Dokument, das Grenzen protokolliert statt Erlebnisse zu zeigen.",
+      "risk": "Amtlich und kühl. Die Texte sind warm, mündlich und selbstironisch — ein Paß kann diesen Ton kippen.",
+      "comp": ".impeccable/mocks/decision/challenger-passport.webp",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport.webp"
+    },
+    {
+      "id": "challenger-livery",
+      "label": "Rennstall-Lackierung",
+      "verdict": "declined",
+      "lineage": "Langstrecken-Rennsport, Gulf- und Martini-Streifen",
+      "palette": ["#7CC5E8", "#F0A830", "#1B2A52"],
+      "materials": ["Lackstreifen", "Startnummern-Rondell"],
+      "case": "Fusioniert nicht: Weder die Reise noch das Publikum hat einen Bezug zum Langstreckenrennsport. Verliert beide Achsen.",
+      "kept": "Ein Material trägt die ganze Fläche und liest Identität vor jedem Wort.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-endurance-livery-garage-hero.webp"
+    },
+    {
+      "id": "challenger-versailles",
+      "label": "Die Gärten von Versailles",
+      "verdict": "declined",
+      "lineage": "Barocke Achsen, Bosquets, Wasserspiele",
+      "palette": ["#3F5B3A", "#C8BFA6", "#B8935A"],
+      "materials": ["geschnittene Hecke", "geharkter Kies", "Marmor"],
+      "case": "Falsches Land, falsche Epoche, falsche Haltung: französischer Absolutismus gegen eine atlantisch-bürgerliche Hafenstadt. Verliert die Publikumsachse deutlich.",
+      "kept": "Die choreographierte Enthüllung — vom Überblick in die verborgene Kammer, in Sequenz statt nebeneinander.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-versailles-bosquet-vistas-hero.webp"
+    },
+    {
+      "id": "challenger-cloudquarry",
+      "label": "Der Wolkensteinbruch",
+      "verdict": "declined",
+      "lineage": "Surreale Unmöglichkeitswelt",
+      "palette": ["#F2F4F7", "#6D7B8A", "#3E8FC1"],
+      "materials": ["Kumulusblock", "Sägeschnitt"],
+      "case": "Reine Erfindung ohne Anker im Erlebten. Niemand kennt einen Wolkensteinbruch, und er erklärt nichts über eine Reisechronik. Verliert beide Achsen.",
+      "kept": "Das Immaterielle greifbar machen: Levante und Poniente werden Material statt Textstelle.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp"
+    },
+    {
+      "id": "challenger-sevensegment",
+      "label": "Die Sieben-Segment-Anzeige",
+      "verdict": "declined",
+      "lineage": "Radiowecker, Tankstellenpreise, Anzeigetafeln",
+      "palette": ["#0D0D0D", "#E02B20", "#3A1210"],
+      "materials": ["LED-Segment", "mattes Schwarz"],
+      "case": "Verlockend wegen der sekundengenauen Zahlen, aber eine Zahlenwelt auf schwarzem Grund kann keine 1.534 Fotos tragen — die Bilder wären Fremdkörper. Und sie wiederholte den Split-Flap-Countdown, den diese Seite gerade ablöst. Verliert die Produktklarheit.",
+      "kept": "Die unbeleuchteten Segmente sind mitgestaltet: der leere Tag bekommt eine Form, statt übersprungen zu werden.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock-hero.webp"
+    },
+    {
+      "id": "challenger-jackfield",
+      "label": "Das Steckfeld",
+      "verdict": "declined",
+      "lineage": "Maschinenraum-Rangierfeld, Bernstein auf schwarzem Glas",
+      "palette": ["#0A0A0C", "#E8A020", "#2A2A2E"],
+      "materials": ["schwarzes Glas", "Signalbernstein"],
+      "case": "Eine Bedien-Welt für eine Erlebnis-Oberfläche. Technisch vertraut für den Autor, aber nicht für das Publikum, und sie bietet den Bildern keine Fläche. Verliert beide Achsen.",
+      "kept": "Zustand über Strichmuster statt über Farbe — trägt zugleich die Barrierefreiheit.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-normalled-jackfield-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "Der Kategorie-Standard",
+    "thesis": "Was jeder Reiseblog liefert, aber handwerklich einwandfrei ausgeführt.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"],
+    "materials": ["klares Raster", "Vollbild-Fotografie"],
+    "viewport": "Ein randloses Foto füllt den Schirm, darüber der Titel in feiner Serifenschrift. Darunter ein Raster aus vierzehn Karten mit abgerundeten Ecken.",
+    "risk": "Von der Konkurrenz nicht zu unterscheiden — und zwar absichtlich.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

@@ -32,3 +32,6 @@ platform/worker/wrangler.toml
 # impeccable-Engine: plattformspezifisches Binary (12 MB, darwin-arm64), wird von
 # `npx impeccable install/update` geholt. Gehoert nicht in ein oeffentliches Repo.
 .claude/skills/impeccable/scripts/bin/
+# impeccable-Arbeitsstand: Referenz-Crops und Zwischenaufnahmen sind reproduzierbar
+sites/*/.impeccable/build/crops/
+sites/*/.impeccable/review/
