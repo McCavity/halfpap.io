@@ -98,6 +98,37 @@
 </main>
 </div>
 
+<button class="notebutton" type="button" id="note-open" aria-haspopup="dialog">
+	<span class="notebutton__hint">Über diese Seite</span>
+	<span aria-hidden="true">i</span>
+	<span class="visually-hidden">Über diese Seite</span>
+</button>
+
+<dialog class="sitenote" id="note-dialog" aria-labelledby="note-title">
+	<div class="sitenote__sheet">
+		<button class="sitenote__close" type="button" id="note-close" aria-label="Hinweis schließen">×</button>
+		<h2 class="sitenote__title" id="note-title">Wie diese Seite entstanden ist</h2>
+
+		<p>Die Erzählung stammt aus meinen eigenen Beiträgen: 21 Texte, abends während der Reise
+		geschrieben, zusammen rund 64.000 Zeichen.</p>
+
+		<p>Für diesen Blog wurden sie mit KI-Unterstützung neu geordnet und gekürzt. Jedes Kapitel
+		erzählt den Tag, an dem etwas passierte — nicht den Abend, an dem ich es aufschrieb.
+		Formulierungen sind teils übernommen, teils neu gefaßt. <strong>Hinzuerfunden wurde
+		nichts:</strong> Was in keiner Quelle stand, steht auch nicht auf dieser Seite.</p>
+
+		<p><strong>Alle Fotos und Videos sind meine eigenen Aufnahmen.</strong> Sie sind beschnitten
+		und fürs Web verkleinert, sonst unverändert. Die Videos sind absichtlich stumm.</p>
+
+		<p><strong>Gezeichnet ist der Rest.</strong> Die Seite selbst wurde mit KI gebaut, ebenso
+		der Papierhintergrund, die Reiter, die Briefmarke und die Karte. Die Karte zeigt die Orte,
+		an denen wir waren — sie ist gezeichnet und nicht maßstabsgetreu.</p>
+
+		<p>Auch die beiden Kühlschrankmagnete sind gezeichnet. Es gibt sie wirklich, wir haben sie
+		gekauft; was hier klebt, sind nachgezeichnete Abbilder und keine freigestellten Fotos.</p>
+	</div>
+</dialog>
+
 <button class="mapbutton" type="button" id="map-open" aria-haspopup="dialog">
 	<span class="mapbutton__hint">Karte</span>
 	<img src="../../assets/plates/map-badge.png" width="815" height="830" alt="Wohin wir gekommen sind — Karte öffnen">
@@ -130,6 +161,6 @@
 	</div>
 </dialog>
 
-<script src="../../js/map.js"></script>
+<script src="../../js/popouts.js"></script>
 </body>
 </html>
