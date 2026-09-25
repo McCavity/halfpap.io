@@ -1077,6 +1077,32 @@ html:has(dialog[open]) {
 	text-decoration-color: var(--ochre);
 }
 
+/* ---- Wartungshinweis ------------------------------------------------------ */
+
+/*
+ * Befristete Zeile ueber der Seite, nur waehrend angekuendigter Wartung im
+ * Markup. Die Regel bleibt dauerhaft stehen (wie .notice-bar in shared/css).
+ * Aus den vorhandenen Marken gebaut; der Zustand liegt als Kante am Atlantik,
+ * nicht als Flaeche — wie ueberall auf dieser Seite.
+ */
+.notice-bar {
+	background: var(--card-deep);
+	border-bottom: 2px solid var(--atlantic-lift);
+}
+
+.notice-bar p {
+	max-width: 88rem;
+	margin: 0 auto;
+	padding: 0.6rem var(--gutter);
+	font-size: 0.9em;
+	color: var(--ink-quiet);
+}
+
+.notice-bar strong {
+	color: var(--pencil-bright);
+	font-weight: 600;
+}
+
 .skiplink {
 	position: absolute;
 	left: -9999px;
