@@ -23,6 +23,12 @@ sites/*/favicon.svg
 # … außer site-eigene Favicons (maclist bringt sein App-Icon mit, sync-content.sh
 # überschreibt es nicht — siehe dortige Favicon-Schleife)
 !sites/maclist/favicon.svg
+# … und cadiz ganz: es steht NICHT in der Sync-Schleife, css/, fonts/ und das
+# Favicon sind dort Quelle, kein Spiegel. Ohne diese Ausnahmen lebte das ganze
+# Designsystem nur auf dem Arbeitsrechner und dem Server (gefunden 25.09.2026).
+!sites/cadiz/css/
+!sites/cadiz/fonts/
+!sites/cadiz/favicon.svg
 
 # Worker deploy config (contains account_id)
 platform/worker/wrangler.toml

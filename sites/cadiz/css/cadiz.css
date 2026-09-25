@@ -1,0 +1,1142 @@
+/*
+ * cadiz.halfpap.io — Das Reisealbum.
+ *
+ * Eigenes Design-System. Erbt bewusst NICHT shared/css: `cadiz` steht nicht in
+ * der Sync-Schleife von platform/sync-content.sh.
+ *
+ * Die Welt: schwarzer Albumkarton als durchgehender Grund, darauf ein festes
+ * Vokabular echter Objekte — Fotoecken, Briefmarke, Klebeband, gerissene Reiter,
+ * Silberstift. Schatten nur dort, wo ein physisches Objekt wirklich einen wirft.
+ * Zustaende kodieren ueber Form, nie allein ueber Farbe.
+ */
+
+/* ---- Schriften, selbst gehostet (die CSP verbietet externe Quellen) -------- */
+
+@font-face {
+	font-family: "Homemade Apple";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/homemade-apple-400.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Signika Negative";
+	font-style: normal;
+	font-weight: 300 600;
+	font-display: swap;
+	src: url("../fonts/signika-negative-var-latin.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: "Signika Negative";
+	font-style: normal;
+	font-weight: 300 600;
+	font-display: swap;
+	src: url("../fonts/signika-negative-var-latin-ext.woff2") format("woff2");
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+		U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+		U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---- Marken ---------------------------------------------------------------- */
+
+:root {
+	/* Der Grund. Warmes Schwarz, nie Creme, nie Pergament. */
+	--card: #14120f;
+	--card-deep: #0d0c0a;
+
+	/* Atlantik. Traegt Zustaende an der Kante, nie als Flaeche. */
+	--atlantic: #0f3b57;
+	--atlantic-lift: #1d5c85;
+
+	/* Klebeband und Sonne. */
+	--ochre: #c98a3e;
+
+	/* Stempelfarbe. */
+	--postmark: #c6362c;
+
+	/* Papier. */
+	--paper: #f2f0eb;
+	--paper-dim: #d8d4cb;
+
+	/* Silberstift auf schwarzem Karton. */
+	--pencil: #b9b5ad;
+	--pencil-bright: #e4e0d8;
+
+	/* Fliesstext. */
+	--ink: #ded9cf;
+	--ink-quiet: #a09a8f;
+
+	--measure: 68ch;
+	--gutter: clamp(1rem, 4vw, 4.5rem);
+	--rhythm: clamp(2.5rem, 6vw, 5rem);
+
+	color-scheme: dark;
+	accent-color: var(--ochre);
+}
+
+/* ---- Grundlage ------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: var(--card);
+	background-image: url("../assets/plates/album-card.png");
+	background-repeat: repeat;
+	background-size: 512px 288px;
+	color: var(--ink);
+	font-family: "Signika Negative", ui-sans-serif, system-ui, sans-serif;
+	font-weight: 400;
+	font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Die Flaechen, die niemand zeichnet, tragen die Gestaltung trotzdem. */
+::selection {
+	background: var(--ochre);
+	color: var(--card);
+}
+:where(a, button, [tabindex]):focus-visible {
+	outline: 2px solid var(--ochre);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+* {
+	caret-color: var(--ochre);
+	scrollbar-color: var(--atlantic-lift) var(--card-deep);
+	scrollbar-width: thin;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ---- Handschrift ----------------------------------------------------------- */
+
+.hand {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil-bright);
+	letter-spacing: 0.02em;
+	line-height: 1.35;
+}
+
+/* ---- Seitenbau ------------------------------------------------------------- */
+
+.page {
+	max-width: 88rem;
+	margin: 0 auto;
+	padding: var(--rhythm) var(--gutter) calc(var(--rhythm) * 2);
+}
+
+/* ---- Kopfbereich ----------------------------------------------------------- */
+
+.opening {
+	display: grid;
+	gap: clamp(2rem, 5vw, 4rem);
+	grid-template-columns: minmax(0, 1fr);
+	align-items: start;
+}
+
+@media (min-width: 60rem) {
+	.opening {
+		grid-template-columns: minmax(21rem, 33fr) minmax(0, 60fr);
+	}
+}
+
+.opening__title {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil-bright);
+	font-size: clamp(2.3rem, 1.4rem + 2.6vw, 3.5rem);
+	line-height: 1.15;
+	margin: 0 0 0.1em;
+	letter-spacing: 0.01em;
+}
+
+.opening__subtitle {
+	font-family: "Homemade Apple", cursive;
+	color: var(--pencil);
+	font-size: clamp(1.1rem, 0.9rem + 0.9vw, 1.6rem);
+	margin: 0 0 1.6rem;
+}
+
+.opening__lead {
+	max-width: var(--measure);
+	margin: 0 0 1.1rem;
+	color: var(--ink);
+}
+
+.opening__lead:last-of-type {
+	margin-bottom: 0;
+}
+
+/* ---- Das aufgeklebte Foto -------------------------------------------------- */
+
+.mounted {
+	position: relative;
+	display: block;
+	margin: 0;
+	transform: rotate(-1.2deg);
+}
+
+.mounted__frame {
+	position: relative;
+	padding: clamp(0.7rem, 1.4vw, 1.1rem);
+	background: transparent;
+}
+
+/* Nur das aufgeklebte Hauptfoto fuellt den Rahmen. Die Briefmarke liegt darauf
+   und hat ihre eigene Groesse — ein gemeinsamer img-Selektor waere ihr Verhaengnis. */
+.mounted__photo {
+	width: 100%;
+	box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.85);
+}
+
+/* Vier Fotoecken. Gezeichnet, nicht aufgeklebt — sie sind Geometrie, kein Motiv. */
+.mounted__frame::before,
+.mounted__frame::after,
+.mounted__corners::before,
+.mounted__corners::after {
+	content: "";
+	position: absolute;
+	width: clamp(1.9rem, 3.4vw, 2.9rem);
+	height: clamp(1.9rem, 3.4vw, 2.9rem);
+	background: linear-gradient(135deg, var(--paper) 50%, transparent 50%);
+	filter: drop-shadow(0 2px 3px rgb(0 0 0 / 0.6));
+}
+.mounted__frame::before {
+	top: 0;
+	left: 0;
+}
+.mounted__frame::after {
+	top: 0;
+	right: 0;
+	transform: rotate(90deg);
+}
+.mounted__corners::before {
+	bottom: 0;
+	right: 0;
+	transform: rotate(180deg);
+}
+.mounted__corners::after {
+	bottom: 0;
+	left: 0;
+	transform: rotate(270deg);
+}
+
+.mounted__tape {
+	position: absolute;
+	top: -0.9rem;
+	left: 34%;
+	width: clamp(6rem, 13vw, 11rem);
+	height: clamp(1.5rem, 2.6vw, 2.2rem);
+	background: linear-gradient(
+		175deg,
+		rgb(201 138 62 / 0.86),
+		rgb(201 138 62 / 0.72)
+	);
+	transform: rotate(-1.6deg);
+	box-shadow: 0 2px 5px rgb(0 0 0 / 0.45);
+	z-index: 2;
+}
+
+.mounted__stamp {
+	position: absolute;
+	top: -1.8rem;
+	right: -1.2rem;
+	width: clamp(5.5rem, 9vw, 8.5rem);
+	transform: rotate(5deg);
+	z-index: 3;
+	filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.6));
+}
+
+.mounted__caption {
+	margin: 1.4rem 0 0;
+	padding-left: clamp(0.7rem, 1.4vw, 1.1rem);
+	font-size: 0.86rem;
+	color: var(--ink-quiet);
+	max-width: 46ch;
+}
+
+/* ---- Die Tage -------------------------------------------------------------- */
+
+.days {
+	margin-top: calc(var(--rhythm) * 1.4);
+}
+
+.days__heading {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil);
+	font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
+	margin: 0 0 2.2rem;
+}
+
+.days__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: clamp(1.6rem, 3vw, 2.6rem);
+}
+
+.day {
+	display: grid;
+	gap: clamp(0.9rem, 2.2vw, 1.8rem);
+	grid-template-columns: minmax(0, 1fr);
+	align-items: center;
+}
+
+@media (min-width: 46rem) {
+	.day {
+		grid-template-columns: 8.5rem 7rem minmax(0, 1fr) 9rem;
+	}
+}
+
+.day__thumb {
+	position: relative;
+	width: 8.5rem;
+	aspect-ratio: 1;
+	transform: rotate(-1deg);
+}
+
+.day__thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0 6px 14px -8px rgb(0 0 0 / 0.9);
+}
+
+/* Zwei kleine Ecken genuegen im Kleinformat. */
+.day__thumb::before,
+.day__thumb::after {
+	content: "";
+	position: absolute;
+	width: 1.15rem;
+	height: 1.15rem;
+	background: linear-gradient(135deg, var(--paper) 50%, transparent 50%);
+	filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.6));
+}
+.day__thumb::before {
+	top: 0;
+	left: 0;
+}
+.day__thumb::after {
+	bottom: 0;
+	right: 0;
+	transform: rotate(180deg);
+}
+
+.day__date {
+	font-family: "Homemade Apple", cursive;
+	color: var(--pencil-bright);
+	font-size: clamp(1.5rem, 1.2rem + 1.1vw, 2.1rem);
+	white-space: nowrap;
+}
+
+.day__text {
+	margin: 0;
+	max-width: 58ch;
+	color: var(--ink);
+}
+
+.day__place {
+	color: var(--ink-quiet);
+}
+
+/* Der Reiter. Die Platte IST der Reiter — die gerissene Kante ist gescanntes
+   Papier, keine clip-path-Nachbildung. Ausflugstag und Stadttag unterscheiden
+   sich an der KANTE (die blaue Kerbe steckt in der Platte), nicht am Farbton. */
+.day__tab {
+	justify-self: start;
+	display: grid;
+	place-items: center;
+	width: 9rem;
+	aspect-ratio: 2.11;
+	padding: 0 0.9rem 0.2rem;
+	color: var(--card);
+	background-image: url("../assets/plates/day2-tab.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	filter: drop-shadow(0 3px 6px rgb(0 0 0 / 0.55));
+	transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.day--trip .day__tab {
+	background-image: url("../assets/plates/day1-tab.png");
+	/* Die Kerbe sitzt rechts im Bild — der Text rueckt ihr aus dem Weg. */
+	padding-right: 2rem;
+}
+
+.day__tab:hover,
+.day__tab:focus-visible {
+	transform: translateX(4px);
+}
+
+/* ---- Kapitelseite ----------------------------------------------------------
+   Ein Tag, eine Seite. Schmaler als die Uebersicht, weil hier gelesen wird. */
+
+.page--chapter {
+	max-width: 62rem;
+}
+
+.chapter__back {
+	display: inline-block;
+	margin-bottom: 2.4rem;
+	font-size: 0.86rem;
+	letter-spacing: 0.03em;
+	color: var(--ink-quiet);
+	text-decoration: none;
+}
+
+.chapter__back:hover,
+.chapter__back:focus-visible {
+	color: var(--paper);
+}
+
+.chapter__date {
+	font-family: "Homemade Apple", cursive;
+	color: var(--pencil);
+	font-size: clamp(1.4rem, 1.2rem + 1vw, 2rem);
+	margin: 0 0 0.2rem;
+}
+
+.chapter__title {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil-bright);
+	font-size: clamp(2.4rem, 1.6rem + 3vw, 4rem);
+	line-height: 1.1;
+	margin: 0 0 1.2rem;
+}
+
+.chapter__standfirst {
+	max-width: 54ch;
+	margin: 0 0 var(--rhythm);
+	font-size: clamp(1.05rem, 1rem + 0.4vw, 1.3rem);
+	line-height: 1.5;
+	color: var(--ink);
+}
+
+.chapter__opener {
+	max-width: 46rem;
+	margin: 0 0 var(--rhythm);
+}
+
+/* Der Lesetext. Ein Mass von rund 68 Zeichen, mehr Luft ueber einer
+   Ueberschrift als darunter. */
+.prose {
+	max-width: 68ch;
+}
+
+.prose p {
+	margin: 0 0 1.25em;
+}
+
+.prose h2 {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil-bright);
+	font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+	line-height: 1.25;
+	margin: 2.6em 0 0.7em;
+}
+
+.prose em {
+	font-style: italic;
+	color: var(--pencil-bright);
+}
+
+.prose strong {
+	font-weight: 600;
+	color: var(--pencil-bright);
+}
+
+/* Der eine Wissensabsatz je Kapitel. Er steht nicht vor der Erzaehlung,
+   sondern entsteht aus ihr — deshalb kein Kasten, nur ein Randstrich in
+   Ockerton und etwas Luft. */
+.prose__aside {
+	padding-left: 1.2rem;
+	border-left: 1px solid var(--ochre);
+	color: var(--ink);
+}
+
+/* Abbildungen im Lesetext. Sie duerfen breiter sein als das Textmass —
+   das Bild ist hier Beleg, nicht Beiwerk. */
+.chapter__figure {
+	margin: 2.4rem 0 2.8rem;
+	max-width: min(46rem, 100%);
+}
+
+.chapter__figure img,
+.chapter__figure video {
+	width: 100%;
+	height: auto;
+	display: block;
+	box-shadow: 0 10px 24px -14px rgb(0 0 0 / 0.9);
+}
+
+/* Video laeuft nie von selbst an: der Leser startet es. Damit ist auch
+   prefers-reduced-motion erfuellt, ohne Sonderregel. */
+.chapter__figure video {
+	background: #000;
+}
+
+/* Hochformate bleiben schmaler, sonst tuermen sie sich im Lesefluss auf. */
+.chapter__figure--tall {
+	max-width: min(26rem, 100%);
+}
+
+.chapter__figure figcaption {
+	margin-top: 0.9rem;
+	font-size: 0.86rem;
+	color: var(--ink-quiet);
+	max-width: 52ch;
+}
+
+/* Ein Link, der die Seite verlaesst, sagt das — sichtbar und fuer Screenreader. */
+.external {
+	color: var(--ink);
+	text-decoration-color: rgb(201 138 62 / 0.7);
+	text-underline-offset: 0.22em;
+}
+
+.external:hover,
+.external:focus-visible {
+	text-decoration-color: var(--ochre);
+}
+
+.external__mark {
+	display: inline-block;
+	margin-left: 0.22em;
+	font-size: 0.78em;
+	color: var(--ochre);
+	transform: translateY(-0.1em);
+}
+
+/* Ein Beleg-Link haengt am Satz, nicht im Lesefluss. */
+.external--note {
+	text-decoration: none;
+	margin-left: 0.15em;
+}
+
+.prose__note {
+	margin-top: 2.6rem;
+	padding-top: 1.1rem;
+	border-top: 1px solid rgb(185 181 173 / 0.16);
+	font-size: 0.86rem;
+	color: var(--ink-quiet);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.chapter__sticker-figure {
+	margin: 2.4rem 0;
+	max-width: 26rem;
+}
+
+.chapter__sticker-figure img {
+	width: 100%;
+	transform: rotate(-3deg);
+	filter: drop-shadow(0 8px 16px rgb(0 0 0 / 0.6));
+}
+
+.chapter__sticker-figure figcaption {
+	margin-top: 1.4rem;
+	font-size: 0.86rem;
+	color: var(--ink-quiet);
+}
+
+.chapter__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 2rem;
+	align-items: baseline;
+	justify-content: space-between;
+	margin-top: calc(var(--rhythm) * 1.6);
+	padding-top: 1.8rem;
+	border-top: 1px solid rgb(185 181 173 / 0.16);
+}
+
+.chapter__nav-link {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+	color: var(--ink);
+	text-decoration: none;
+}
+
+.chapter__nav-link--next {
+	text-align: right;
+}
+
+.chapter__nav-label {
+	font-size: 0.76rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--ink-quiet);
+}
+
+.chapter__nav-day {
+	font-size: 1.3rem;
+}
+
+.chapter__nav-link:hover .chapter__nav-day,
+.chapter__nav-link:focus-visible .chapter__nav-day {
+	color: var(--ochre);
+}
+
+/* ---- Mitbringsel ----------------------------------------------------------
+   Die beiden Kuehlschrankmagnete liegen als Sticker auf dem Karton, wie man sie
+   in ein Album klebt: leicht schief, mit eigenem Schatten. Sie sind Beleg, nicht
+   Dekoration — deshalb tragen sie einen ALT-Text wie jedes andere Bild. */
+
+.day--sticker {
+	position: relative;
+}
+
+.day__sticker {
+	position: absolute;
+	right: -0.5rem;
+	bottom: -2.2rem;
+	width: clamp(6rem, 11vw, 9.5rem);
+	transform: rotate(-6deg);
+	filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.6));
+	pointer-events: none;
+	z-index: 1;
+}
+
+@media (max-width: 46rem) {
+	.day__sticker {
+		position: static;
+		margin: 0.6rem 0 0;
+		transform: rotate(-4deg);
+	}
+}
+
+.page__sticker {
+	width: clamp(8rem, 16vw, 13rem);
+	margin: calc(var(--rhythm) * 1.2) 0 0 auto;
+	transform: rotate(4deg);
+	filter: drop-shadow(0 8px 16px rgb(0 0 0 / 0.6));
+}
+
+/* ---- Die Karte in der Ecke ------------------------------------------------- */
+
+.mapbutton {
+	position: fixed;
+	right: clamp(0.9rem, 2.5vw, 2rem);
+	bottom: clamp(0.9rem, 2.5vw, 2rem);
+	z-index: 40;
+	display: grid;
+	place-items: center;
+	width: 4.4rem;
+	height: 4.4rem;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	transition:
+		transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+		filter 260ms ease-out;
+	filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.7));
+}
+
+.mapbutton img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.mapbutton:hover,
+.mapbutton:focus-visible {
+	transform: rotate(-4deg) scale(1.08);
+	filter: drop-shadow(0 10px 18px rgb(0 0 0 / 0.75));
+}
+
+.mapbutton__hint {
+	position: absolute;
+	right: calc(100% + 0.7rem);
+	white-space: nowrap;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--paper);
+	background: var(--card-deep);
+	padding: 0.3rem 0.6rem;
+	opacity: 0;
+	transform: translateX(6px);
+	transition:
+		opacity 200ms ease-out,
+		transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+	pointer-events: none;
+}
+
+/* Nur auf Geraeten mit echtem Zeiger. Am Telefon gibt es kein Hover, und
+   nach einem Tap wuerde der Hinweis kleben bleiben: die Fokus-Rueckgabe beim
+   Schliessen des Blattes loest :focus-visible aus. Gemessen am 20.09. */
+@media (hover: hover) {
+	.mapbutton:hover .mapbutton__hint,
+	.mapbutton:focus-visible .mapbutton__hint {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* ---- Der aufgeklappte Kartentisch ------------------------------------------ */
+
+/* Das Tagesbild fuehrt zum Kapitel wie der Reiter daneben. Es ist der bequeme
+   Klickweg fuer Maus und Finger; den zugaenglichen Link traegt der Reiter,
+   deshalb steht das Bild mit tabindex="-1" nicht zweimal in der Tabfolge. */
+.day__thumblink {
+	display: block;
+	text-decoration: none;
+}
+
+@media (hover: hover) {
+	.day__thumblink:hover img {
+		filter: brightness(1.08);
+	}
+}
+
+/* Solange ein Blatt offen ist, steht die Seite dahinter still. Chrome sperrt
+   das Body-Scrolling bei showModal() nicht von selbst — ohne das wischt man in
+   der Karte und der Artikel darunter wandert weg. Gemessen 20.09. */
+html:has(dialog[open]) {
+	overflow: hidden;
+}
+
+/* Zweites Blatt in der Ecke: der Hinweis, wie die Seite entstanden ist.
+   Bewusst ohne eigene Bildplatte — bei einem Hinweis ueber gezeichnetes
+   Dekor waere noch ein gezeichnetes Dekor die falsche Geste. */
+.notebutton {
+	position: fixed;
+	right: calc(clamp(0.9rem, 2.5vw, 2rem) + 5.3rem);
+	bottom: calc(clamp(0.9rem, 2.5vw, 2rem) + 0.7rem);
+	z-index: 40;
+	display: grid;
+	place-items: center;
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	border: 1px solid color-mix(in srgb, var(--paper) 35%, transparent);
+	border-radius: 50%;
+	background: var(--card-deep);
+	color: var(--paper);
+	font-family: inherit;
+	font-size: 1.1rem;
+	line-height: 1;
+	cursor: pointer;
+	filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.7));
+	transition:
+		transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+		filter 260ms ease-out;
+}
+
+.notebutton:hover,
+.notebutton:focus-visible {
+	transform: scale(1.1);
+	filter: drop-shadow(0 10px 18px rgb(0 0 0 / 0.75));
+}
+
+.notebutton__hint {
+	position: absolute;
+	right: calc(100% + 0.7rem);
+	white-space: nowrap;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--paper);
+	background: var(--card-deep);
+	padding: 0.3rem 0.6rem;
+	opacity: 0;
+	transform: translateX(6px);
+	transition:
+		opacity 200ms ease-out,
+		transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+	pointer-events: none;
+}
+
+/* Nur auf Geraeten mit echtem Zeiger. Am Telefon gibt es kein Hover, und
+   nach einem Tap wuerde der Hinweis kleben bleiben: die Fokus-Rueckgabe beim
+   Schliessen des Blattes loest :focus-visible aus. Gemessen am 20.09. */
+@media (hover: hover) {
+	.notebutton:hover .notebutton__hint,
+	.notebutton:focus-visible .notebutton__hint {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Das Hinweisblatt selbst: schmaler als die Karte, es ist Text. */
+.sitenote {
+	width: min(38rem, 92vw);
+	max-height: 88vh;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	overflow: visible;
+}
+
+.sitenote__sheet {
+	position: relative;
+	background-color: var(--card);
+	background-image: url("../assets/plates/album-card.png");
+	border: 1px solid color-mix(in srgb, var(--paper) 18%, transparent);
+	padding: clamp(1.6rem, 4vw, 2.6rem);
+	max-height: 88vh;
+	overflow-y: auto;
+	box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.9);
+}
+
+.sitenote__title {
+	margin: 0 0 1.2rem;
+	font-size: clamp(1.3rem, 3.4vw, 1.7rem);
+	color: var(--paper);
+}
+
+.sitenote__sheet p {
+	margin: 0 0 1rem;
+	font-size: 0.94rem;
+	line-height: 1.65;
+	color: var(--ink-quiet);
+	max-width: 56ch;
+}
+
+.sitenote__sheet p strong {
+	color: var(--paper);
+	font-weight: 600;
+}
+
+.sitenote__close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.7rem;
+	border: 0;
+	background: transparent;
+	color: var(--paper);
+	font-size: 1.6rem;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0.2rem 0.4rem;
+}
+
+.maproute {
+	width: min(60rem, 92vw);
+	max-height: 88vh;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	overflow: visible;
+}
+
+.maproute::backdrop {
+	background: rgb(6 6 5 / 0.86);
+}
+
+.maproute__sheet {
+	position: relative;
+	background-color: var(--card);
+	background-image: url("../assets/plates/album-card.png");
+	background-size: 512px 288px;
+	padding: clamp(1.4rem, 3vw, 2.4rem);
+	/* Ohne diese zwei Zeilen ragt das Blatt bei niedrigem Viewport (Telefon quer,
+	   740x360 gemessen) 306 px aus dem Dialog: Fussnote und drei Ortsmarken sind
+	   dann unerreichbar, und das Wischen scrollt die Seite dahinter. */
+	max-height: 88vh;
+	overflow-y: auto;
+	box-shadow: 0 30px 70px -30px rgb(0 0 0 / 0.95);
+}
+
+.maproute__title {
+	font-family: "Homemade Apple", cursive;
+	font-weight: 400;
+	color: var(--pencil-bright);
+	font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.8rem);
+	margin: 0 0 1.2rem;
+}
+
+.maproute__intro {
+	margin: 0 0 1.4rem;
+	max-width: 58ch;
+}
+
+.maproute__map {
+	position: relative;
+	line-height: 0;
+}
+
+.maproute__map img {
+	width: 100%;
+	box-shadow: 0 14px 30px -18px rgb(0 0 0 / 0.9);
+}
+
+/* Die Ortsmarken liegen auf der Karte. Position in Prozent, damit sie beim
+   Skalieren an ihrem Ort bleiben. Inline-Styles verbietet die CSP — deshalb
+   je Marke eine Klasse statt eines style-Attributs.
+
+   Vier der fuenf Orte liegen an derselben Bucht und damit eng beieinander.
+   Deshalb traegt jede Marke eine Stecknadel am echten Ort und ein Schild
+   daneben, verbunden durch eine feine Fuehrungslinie — so wie eine Seekarte
+   es macht, wenn der Platz knapp wird. */
+.maproute__pin {
+	position: absolute;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.4rem;
+	padding: 0.28rem 0.6rem;
+	line-height: 1.25;
+	font-size: 0.82rem;
+	font-weight: 600;
+	white-space: nowrap;
+	color: var(--card);
+	background: rgb(242 240 235 / 0.94);
+	text-decoration: none;
+	box-shadow: 0 2px 6px -2px rgb(0 0 0 / 0.6);
+	transition:
+		transform 200ms cubic-bezier(0.22, 1, 0.36, 1),
+		background-color 200ms ease-out;
+}
+
+/* Der Ort, auf dem man gerade steht. Die Regel MUSS hinter .maproute__pin
+   stehen — davor verliert sie bei gleicher Spezifitaet und tut gar nichts
+   (so stand sie bis zum 20.09.). Der Zustand traegt ueber die Form, nicht
+   ueber Farbe: FORM verlangt das, und Ocker ist schon die Hover-Farbe. */
+.maproute__pin[aria-current="page"] {
+	box-shadow: inset 0 0 0 2px var(--card-deep);
+	font-weight: 700;
+}
+
+.maproute__pin[aria-current="page"] .maproute__place::after {
+	content: " ·";
+}
+
+.maproute__pin:hover,
+.maproute__pin:focus-visible {
+	background: var(--ochre);
+	z-index: 3;
+}
+
+.maproute__pin .maproute__date {
+	color: rgb(20 18 15 / 0.72);
+	font-size: max(0.72rem, 11.5px);
+}
+
+/* Die Stecknadel: Kopf plus Schaft, leicht nach rechts geneigt. Jede Marke
+   bekommt einen minimal anderen Winkel — es faellt kaum auf, aber es ist da. */
+.maproute__stick {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.maproute__stick::before {
+	/* Schaft */
+	content: "";
+	position: absolute;
+	left: -0.5px;
+	top: 0;
+	width: 1.5px;
+	height: 0.85rem;
+	background: linear-gradient(to bottom, rgb(90 86 80 / 0.95), rgb(140 136 128 / 0.55));
+	transform-origin: 50% 100%;
+	transform: rotate(var(--tilt, 8deg));
+}
+
+.maproute__stick::after {
+	/* Kopf */
+	content: "";
+	position: absolute;
+	top: -0.72rem;
+	left: 50%;
+	width: 0.46rem;
+	height: 0.46rem;
+	margin-left: -0.23rem;
+	border-radius: 50%;
+	background: var(--head, #c6362c);
+	box-shadow:
+		0 0 0 1px rgb(20 18 15 / 0.35),
+		inset -1px -1px 2px rgb(0 0 0 / 0.35),
+		inset 1px 1px 2px rgb(255 255 255 / 0.5);
+	transform-origin: 50% 200%;
+	transform: rotate(var(--tilt, 8deg));
+}
+
+/* Die Fuehrungslinie vom Schild zur Nadel. */
+.maproute__pin::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: var(--lead, 0);
+	height: 1px;
+	background: rgb(60 56 50 / 0.5);
+}
+
+.maproute__pin--left::after { left: 100%; }
+.maproute__pin--right::after { right: 100%; }
+
+/* Fuenf Orte, fuenf Nadelkoepfe, fuenf Neigungen. */
+.maproute__stick[data-pin="1"] { left: 48.4%; top: 50.9%; --head: #c6362c; --tilt:  9deg; }
+.maproute__stick[data-pin="2"] { left: 50.4%; top: 46.0%; --head: #0f3b57; --tilt:  6deg; }
+.maproute__stick[data-pin="3"] { left: 44.5%; top: 42.7%; --head: #c98a3e; --tilt: 11deg; }
+.maproute__stick[data-pin="4"] { left: 55.5%; top: 40.1%; --head: #6b7f3a; --tilt:  7deg; }
+.maproute__stick[data-pin="5"] { left: 83.6%; top: 81.4%; --head: #e8e2d6; --tilt: 10deg; }
+
+/* Die Schilder weichen aus: Cadiz nach links unten, El Puerto nach rechts,
+   Rota nach links, Jerez nach rechts, Gibraltar nach rechts. */
+.maproute__pin[data-pin="1"] { left: 30.5%; top: 56.5%; --lead: 13.5%; }
+.maproute__pin[data-pin="2"] { left: 57.5%; top: 52.5%; --lead: 6%; }
+.maproute__pin[data-pin="3"] { left: 27.0%; top: 42.7%; --lead: 11.5%; }
+.maproute__pin[data-pin="4"] { left: 60.5%; top: 36.5%; --lead: 4%; }
+.maproute__pin[data-pin="5"] { left: 87.0%; top: 81.4%; --lead: 2.5%; }
+
+/* Rechts stehende Schilder sitzen mit ihrer linken Kante an der Leitlinie,
+   links stehende mit ihrer rechten. */
+.maproute__pin--left { transform: translate(-100%, -50%); }
+.maproute__pin--right { transform: translate(0, -50%); }
+.maproute__pin--left:hover, .maproute__pin--left:focus-visible { transform: translate(-100%, -50%) scale(1.05); }
+.maproute__pin--right:hover, .maproute__pin--right:focus-visible { transform: translate(0, -50%) scale(1.05); }
+
+.maproute__foot {
+	margin: 1.2rem 0 0;
+	font-size: 0.84rem;
+	color: var(--ink-quiet);
+}
+
+.maproute__close {
+	position: absolute;
+	top: 0.6rem;
+	right: 0.8rem;
+	border: 0;
+	background: transparent;
+	color: var(--pencil);
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 0.3rem 0.5rem;
+	cursor: pointer;
+}
+
+.maproute__close:hover {
+	color: var(--paper);
+}
+
+/* ---- Fussbereich ----------------------------------------------------------- */
+
+.colophon {
+	margin-top: calc(var(--rhythm) * 1.8);
+	padding-top: 1.8rem;
+	border-top: 1px solid rgb(185 181 173 / 0.16);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem 1.6rem;
+	align-items: baseline;
+	font-size: 0.86rem;
+	color: var(--ink-quiet);
+}
+
+.colophon a {
+	color: var(--ink);
+	text-decoration-color: rgb(201 138 62 / 0.6);
+	text-underline-offset: 0.25em;
+}
+
+.colophon a:hover {
+	text-decoration-color: var(--ochre);
+}
+
+/* ---- Wartungshinweis ------------------------------------------------------ */
+
+/*
+ * Befristete Zeile ueber der Seite, nur waehrend angekuendigter Wartung im
+ * Markup. Die Regel bleibt dauerhaft stehen (wie .notice-bar in shared/css).
+ * Aus den vorhandenen Marken gebaut; der Zustand liegt als Kante am Atlantik,
+ * nicht als Flaeche — wie ueberall auf dieser Seite.
+ */
+.notice-bar {
+	background: var(--card-deep);
+	border-bottom: 2px solid var(--atlantic-lift);
+}
+
+.notice-bar p {
+	max-width: 88rem;
+	margin: 0 auto;
+	padding: 0.6rem var(--gutter);
+	font-size: 0.9em;
+	color: var(--ink-quiet);
+}
+
+.notice-bar strong {
+	color: var(--pencil-bright);
+	font-weight: 600;
+}
+
+.skiplink {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	background: var(--paper);
+	color: var(--card);
+	padding: 0.7rem 1.2rem;
+	z-index: 100;
+}
+
+.skiplink:focus {
+	left: 1rem;
+	top: 1rem;
+}
+
+/* ---- Bewegung ist ein Angebot, keine Bedingung ----------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+	.mounted,
+	.day__thumb,
+	.mapbutton:hover,
+	.mapbutton:focus-visible,
+	.notebutton:hover,
+	.notebutton:focus-visible {
+		transform: none;
+	}
+}
